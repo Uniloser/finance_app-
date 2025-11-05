@@ -1,0 +1,69 @@
+<!-- components/navbar.html -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-surface-variant/50 bg-background/80 backdrop-blur-sm px-4 md:px-10 lg:px-20 py-3">
+  <div class="flex items-center gap-4 text-on-background">
+    <div class="size-8 text-primary">
+      <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_6_330)">
+          <path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_6_330">
+            <rect fill="white" height="48" width="48"></rect>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <h2 class="text-xl font-display font-bold leading-tight tracking-[-0.015em]">JIKER Loans</h2>
+  </div>
+  <div class="hidden md:flex flex-1 justify-end gap-8">
+    <div class="flex items-center gap-9">
+      <a class="text-sm font-medium leading-normal text-primary font-bold" href="index.html">Home</a>
+      <a class="text-sm font-medium leading-normal text-on-surface hover:text-primary" href="loans.html">Loans</a>
+      <a class="text-sm font-medium leading-normal text-on-surface hover:text-primary" href="about.html">About Us</a>
+      <a class="text-sm font-medium leading-normal text-on-surface hover:text-primary" href="contacts.html">Contact</a>
+    </div>
+    <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-on-primary text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+      <span class="truncate">Apply Now</span>
+    </button>
+  </div>
+  <button class="md:hidden text-on-surface" id="mobileMenuButton">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+  </button>
+</header>
+
+<!-- Mobile Menu (hidden by default) -->
+<div id="mobileMenu" class="md:hidden fixed inset-0 z-50 bg-background transform -translate-x-full transition-transform duration-300">
+  <div class="flex flex-col h-full p-6">
+    <div class="flex justify-between items-center mb-8">
+      <div class="flex items-center gap-4">
+        <div class="size-8 text-primary">
+          <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_6_330)">
+              <path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_6_330">
+                <rect fill="white" height="48" width="48"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <h2 class="text-xl font-display font-bold">JIKER Loans</h2>
+      </div>
+      <button id="closeMobileMenu" class="text-on-surface">
+        <span class="material-symbols-outlined text-3xl">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-6">
+      <a class="text-lg font-medium text-primary font-bold py-3 border-b border-surface-variant/50" href="index.html">Home</a>
+      <a class="text-lg font-medium text-on-surface hover:text-primary py-3 border-b border-surface-variant/50" href="loans.html">Loans</a>
+      <a class="text-lg font-medium text-on-surface hover:text-primary py-3 border-b border-surface-variant/50" href="about.html">About Us</a>
+      <a class="text-lg font-medium text-on-surface hover:text-primary py-3 border-b border-surface-variant/50" href="contacts.html">Contact</a>
+    </nav>
+    <div class="mt-auto">
+      <button class="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-primary text-on-primary text-base font-bold tracking-[0.015em] hover:opacity-90 transition-opacity">
+        Apply Now
+      </button>
+    </div>
+  </div>
+</div>

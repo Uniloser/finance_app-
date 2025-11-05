@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JIKER Loans Cookie Policy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto+Flex:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+</style>
+<style type="text/tailwindcss">
+    @layer theme {
+        :root, body.light {
+            /* Color Tokens - Light Theme */
+            --md-ref-typeface-brand: 'Manrope';
+            --md-ref-typeface-plain: 'Roboto Flex';
+            
+            --md-sys-color-primary-light: #6A49C2;
+            --md-sys-color-on-primary-light: #FFFFFF;
+            --md-sys-color-primary-container-light: #E9DDFF;
+            --md-sys-color-on-primary-container-light: #22005D;
+            
+            --md-sys-color-secondary-light: #635B70;
+            --md-sys-color-on-secondary-light: #FFFFFF;
+            --md-sys-color-secondary-container-light: #E9DEF8;
+            --md-sys-color-on-secondary-container-light: #1E192B;
+            
+            --md-sys-color-tertiary-light: #7E525D;
+            --md-sys-color-on-tertiary-light: #FFFFFF;
+            --md-sys-color-tertiary-container-light: #FFD9E1;
+            --md-sys-color-on-tertiary-container-light: #31101B;
+            
+            --md-sys-color-surface-light: #FEF7FF;
+            --md-sys-color-on-surface-light: #1D1B20;
+            --md-sys-color-surface-variant-light: #E7E0EB;
+            --md-sys-color-on-surface-variant-light: #49454E;
+            --md-sys-color-surface-container-highest-light: #E6E0E9;
+            --md-sys-color-outline-light: #7A757F;
+            --md-sys-color-background-light: #FEF7FF;
+            --md-sys-color-on-background-light: #1D1B20;
+
+            /* Color Tokens - Dark Theme */
+            --md-sys-color-primary-dark: #CFBCFF;
+            --md-sys-color-on-primary-dark: #3A1290;
+            --md-sys-color-primary-container-dark: #5130A8;
+            --md-sys-color-on-primary-container-dark: #E9DDFF;
+            
+            --md-sys-color-secondary-dark: #CBC3DC;
+            --md-sys-color-on-secondary-dark: #342D41;
+            --md-sys-color-secondary-container-dark: #4B4458;
+            --md-sys-color-on-secondary-container-dark: #E9DEF8;
+            
+            --md-sys-color-tertiary-dark: #F0B8C5;
+            --md-sys-color-on-tertiary-dark: #4A2530;
+            --md-sys-color-tertiary-container-dark: #633B46;
+            --md-sys-color-on-tertiary-container-dark: #FFD9E1;
+            
+            --md-sys-color-surface-dark: #141218;
+            --md-sys-color-on-surface-dark: #E6E1E9;
+            --md-sys-color-surface-variant-dark: #49454E;
+            --md-sys-color-on-surface-variant-dark: #CAC4CF;
+            --md-sys-color-surface-container-highest-dark: #36343B;
+            --md-sys-color-outline-dark: #948F99;
+            --md-sys-color-background-dark: #141218;
+            --md-sys-color-on-background-dark: #E6E1E9;
+
+            /* Apply light theme by default */
+            --primary: var(--md-sys-color-primary-light);
+            --on-primary: var(--md-sys-color-on-primary-light);
+            --primary-container: var(--md-sys-color-primary-container-light);
+            --on-primary-container: var(--md-sys-color-on-primary-container-light);
+            --secondary: var(--md-sys-color-secondary-light);
+            --on-secondary: var(--md-sys-color-on-secondary-light);
+            --secondary-container: var(--md-sys-color-secondary-container-light);
+            --on-secondary-container: var(--md-sys-color-on-secondary-container-light);
+            --tertiary: var(--md-sys-color-tertiary-light);
+            --on-tertiary: var(--md-sys-color-on-tertiary-light);
+            --tertiary-container: var(--md-sys-color-tertiary-container-light);
+            --on-tertiary-container: var(--md-sys-color-on-tertiary-container-light);
+            --surface: var(--md-sys-color-surface-light);
+            --on-surface: var(--md-sys-color-on-surface-light);
+            --surface-variant: var(--md-sys-color-surface-variant-light);
+            --on-surface-variant: var(--md-sys-color-on-surface-variant-light);
+            --outline: var(--md-sys-color-outline-light);
+            --background: var(--md-sys-color-background-light);
+            --on-background: var(--md-sys-color-on-background-light);
+            --surface-container-highest: var(--md-sys-color-surface-container-highest-light);
+        }
+        body.dark {
+            /* Apply dark theme */
+            --primary: var(--md-sys-color-primary-dark);
+            --on-primary: var(--md-sys-color-on-primary-dark);
+            --primary-container: var(--md-sys-color-primary-container-dark);
+            --on-primary-container: var(--md-sys-color-on-primary-container-dark);
+            --secondary: var(--md-sys-color-secondary-dark);
+            --on-secondary: var(--md-sys-color-on-secondary-dark);
+            --secondary-container: var(--md-sys-color-secondary-container-dark);
+            --on-secondary-container: var(--md-sys-color-on-secondary-container-dark);
+            --tertiary: var(--md-sys-color-tertiary-dark);
+            --on-tertiary: var(--md-sys-color-on-tertiary-dark);
+            --tertiary-container: var(--md-sys-color-tertiary-container-dark);
+            --on-tertiary-container: var(--md-sys-color-on-tertiary-container-dark);
+            --surface: var(--md-sys-color-surface-dark);
+            --on-surface: var(--md-sys-color-on-surface-dark);
+            --surface-variant: var(--md-sys-color-surface-variant-dark);
+            --on-surface-variant: var(--md-sys-color-on-surface-variant-dark);
+            --outline: var(--md-sys-color-outline-dark);
+            --background: var(--md-sys-color-background-dark);
+            --on-background: var(--md-sys-color-on-background-dark);
+            --surface-container-highest: var(--md-sys-color-surface-container-highest-dark);
+        }
+    }
+</style>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    primary: "var(--primary)",
+                    "on-primary": "var(--on-primary)",
+                    "primary-container": "var(--primary-container)",
+                    "on-primary-container": "var(--on-primary-container)",
+                    secondary: "var(--secondary)",
+                    "on-secondary": "var(--on-secondary)",
+                    "secondary-container": "var(--secondary-container)",
+                    "on-secondary-container": "var(--on-secondary-container)",
+                    tertiary: "var(--tertiary)",
+                    "on-tertiary": "var(--on-tertiary)",
+                    "tertiary-container": "var(--tertiary-container)",
+                    "on-tertiary-container": "var(--on-tertiary-container)",
+                    surface: "var(--surface)",
+                    "on-surface": "var(--on-surface)",
+                    "surface-variant": "var(--surface-variant)",
+                    "on-surface-variant": "var(--on-surface-variant)",
+                    outline: "var(--outline)",
+                    background: "var(--background)",
+                    "on-background": "var(--on-background)",
+                    "surface-container-highest": "var(--surface-container-highest)",
+                },
+                fontFamily: {
+                    display: ["Manrope", "sans-serif"],
+                    body: ["Roboto Flex", "sans-serif"],
+                },
+                borderRadius: {
+                    "DEFAULT": "1rem",
+                    "lg": "1.5rem",
+                    "xl": "2rem",
+                    "full": "9999px"
+                },
+            },
+        },
+    }
+</script>
+</head>
+<body class="bg-background font-body text-on-surface">
+    <!-- Navbar Container -->
+<div id="navbar-container">
+    <!-- navbar.html content will be loaded here -->
+</div>
+<div class="relative flex min-h-screen w-full flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center px-4 py-5 sm:px-10 md:px-20 lg:px-40">
+<div class="layout-content-container flex w-full max-w-[960px] flex-1 flex-col">
+
+
+
+<main class="mt-8 flex flex-col gap-10">
+<!-- HeroSection -->
+<div class="@container">
+<div class="flex flex-col-reverse items-center gap-8 px-4 py-10 text-center @[864px]:flex-row @[864px]:text-left">
+<div class="flex flex-col gap-6 @[864px]:justify-center">
+<div class="flex flex-col gap-2">
+<h1 class="font-display text-on-background text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">Our Cookie Policy</h1>
+<h2 class="text-on-surface-variant text-base font-normal leading-normal">To make your experience smoother and safer, we use cookies. Here's what you need to know.</h2>
+</div>
+</div>
+<div class="w-full max-w-xs shrink-0 @[864px]:max-w-none @[864px]:w-1/2">
+<img class="aspect-square w-full rounded-xl object-cover" data-alt="Playful illustration of a cat wearing glasses peeking over a laptop, representing a friendly and approachable tech company." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAullsNtnwmoLQzXm5VQouLZbHtvdmKOhYyViPfKBV-C92zRZ9ctrPssMsTeopO_nkCCsyF6vXk_Pue_A5zucMgXi6pETnlR5LVYXXTxx1Zar3s1h3sN7R1YECG_KsO_dixet74dsMXhC6GX34jOwNtxz3X7rkGvnISjoE8dF17TVsPv4EZQMfhWHdTms78TA3DQPgGcwt3lWtEzhGcQCJyoFmQxfa-mjVwI0J5JpEF5yyqhhjxOlPsJfrzkCp7d1vSsx04HwUfzXw"/>
+</div>
+</div>
+</div>
+<!-- Accordions Section -->
+<div class="flex flex-col gap-3 rounded-lg bg-surface p-4 shadow-sm">
+<details class="group flex flex-col rounded-lg border border-outline/20 bg-surface-container-lowest px-4 py-2" open="">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2">
+<p class="text-base font-medium text-on-surface">What Are Cookies?</p>
+<div class="text-on-surface transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="pb-2 text-sm font-normal leading-normal text-on-surface-variant">Cookies are small text files stored on your device that help our website remember your preferences and actions. Think of them as helpful notes to make your next visit easier and the site more useful to you.</p>
+</details>
+<details class="group flex flex-col rounded-lg border border-outline/20 bg-surface-container-lowest px-4 py-2">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2">
+<p class="text-base font-medium text-on-surface">How We Use Cookies</p>
+<div class="text-on-surface transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="pb-2 text-sm font-normal leading-normal text-on-surface-variant">We use cookies to make our site work, understand how you use our service, and personalize your experience. This helps us improve our platform and offer you the best possible financial solutions.</p>
+</details>
+<details class="group flex flex-col rounded-lg border border-outline/20 bg-surface-container-lowest px-4 py-2">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2">
+<p class="text-base font-medium text-on-surface">Your Consent</p>
+<div class="text-on-surface transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="pb-2 text-sm font-normal leading-normal text-on-surface-variant">By using our website, you consent to the use of essential cookies. You can manage your preferences for other types of cookies at any time through the settings below. Your privacy is important to us.</p>
+</details>
+<details class="group flex flex-col rounded-lg border border-outline/20 bg-surface-container-lowest px-4 py-2">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-2">
+<p class="text-base font-medium text-on-surface">Changes to This Policy</p>
+<div class="text-on-surface transition-transform duration-300 group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="pb-2 text-sm font-normal leading-normal text-on-surface-variant">We may update our Cookie Policy from time to time. We will notify you of any changes by posting the new policy on this page. We encourage you to review this policy periodically for any changes.</p>
+</details>
+</div>
+<!-- Preferences Section -->
+<div class="flex flex-col gap-5 rounded-lg bg-surface p-4 shadow-sm">
+<h2 class="font-display px-4 pb-3 pt-5 text-[22px] font-bold leading-tight tracking-[-0.015em] text-on-surface">Manage Your Preferences</h2>
+<div class="flex flex-col gap-2">
+<!-- ListItem: Essential Cookies -->
+<div class="flex min-h-[72px] items-center justify-between gap-4 rounded-lg bg-surface-container-lowest p-4">
+<div class="flex items-center gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium text-on-surface">Essential Cookies</p>
+<p class="text-sm font-normal text-on-surface-variant">Necessary for the website to function and cannot be switched off.</p>
+</div>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center justify-end rounded-full bg-primary p-0.5">
+<div class="h-full w-[27px] rounded-full bg-white" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+<input checked="" class="invisible absolute" disabled="" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- ListItem: Performance Cookies -->
+<div class="flex min-h-[72px] items-center justify-between gap-4 rounded-lg bg-surface-container-lowest p-4">
+<div class="flex items-center gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium text-on-surface">Performance Cookies</p>
+<p class="text-sm font-normal text-on-surface-variant">Help us understand how you use our site to improve performance.</p>
+</div>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-outline/30 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full w-[27px] rounded-full bg-white" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+<input checked="" class="invisible absolute performance-cookie" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- ListItem: Marketing Cookies -->
+<div class="flex min-h-[72px] items-center justify-between gap-4 rounded-lg bg-surface-container-lowest p-4">
+<div class="flex items-center gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-tertiary-container text-on-tertiary-container">
+<span class="material-symbols-outlined">campaign</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium text-on-surface">Marketing Cookies</p>
+<p class="text-sm font-normal text-on-surface-variant">Used to deliver advertisements more relevant to you and your interests.</p>
+</div>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-outline/30 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full w-[27px] rounded-full bg-white" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+<input class="invisible absolute marketing-cookie" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-4 p-4 sm:flex-row">
+<button id="savePreferences" class="flex h-12 min-w-[84px] flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary-container px-5 text-base font-bold leading-normal tracking-[0.015em] text-on-primary-container hover:bg-primary-container/80 transition-colors">
+<span class="truncate">Save Preferences</span>
+</button>
+<button id="acceptAll" class="flex h-12 min-w-[84px] flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary px-5 text-base font-bold leading-normal tracking-[0.015em] text-on-primary hover:bg-primary/90 transition-colors">
+<span class="truncate">Accept All</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-20 border-t border-outline/20 py-10">
+<div class="flex flex-col items-center justify-between gap-8 text-center sm:flex-row sm:text-left">
+<div>
+<h3 class="font-display text-lg font-bold text-on-surface">JIKER Loans</h3>
+<p class="mt-1 text-sm text-on-surface-variant">© 2025 JIKER Loans LLC. All rights reserved.</p>
+</div>
+<div class="flex items-center gap-6 text-sm font-medium">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms &amp; Conditions</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+    // Load navbar component
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load navbar
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+                // Initialize navbar functionality after loading
+                initializeNavbar();
+            })
+            .catch(error => {
+                console.error('Error loading navbar:', error);
+                document.getElementById('navbar-container').innerHTML = '<div class="text-center py-4">Navigation loading failed</div>';
+            });
+
+        // Initialize navbar functionality
+        function initializeNavbar() {
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const closeMobileMenu = document.getElementById('closeMobileMenu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            if (mobileMenuButton && mobileMenu && closeMobileMenu) {
+                // Open mobile menu
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.remove('-translate-x-full');
+                    document.body.style.overflow = 'hidden';
+                });
+                
+                // Close mobile menu
+                closeMobileMenu.addEventListener('click', function() {
+                    mobileMenu.classList.add('-translate-x-full');
+                    document.body.style.overflow = '';
+                });
+                
+                // Close menu when clicking on links
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.add('-translate-x-full');
+                        document.body.style.overflow = '';
+                    });
+                });
+                
+                // Close menu when clicking outside
+                mobileMenu.addEventListener('click', function(e) {
+                    if (e.target === mobileMenu) {
+                        mobileMenu.classList.add('-translate-x-full');
+                        document.body.style.overflow = '';
+                    }
+                });
+                
+                // Close menu with Escape key
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && !mobileMenu.classList.contains('-translate-x-full')) {
+                        mobileMenu.classList.add('-translate-x-full');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+            
+            // Highlight current page in navigation
+            function highlightCurrentPage() {
+                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                const navLinks = document.querySelectorAll('nav a, .nav-links a');
+                
+                navLinks.forEach(link => {
+                    const linkHref = link.getAttribute('href');
+                    if (linkHref === currentPage) {
+                        link.classList.add('text-primary', 'font-bold');
+                        link.classList.remove('text-on-surface', 'font-medium');
+                    }
+                });
+            }
+            
+            highlightCurrentPage();
+        }
+
+        // Cookie preferences functionality
+        const performanceCookie = document.querySelector('.performance-cookie');
+        const marketingCookie = document.querySelector('.marketing-cookie');
+        const savePreferencesBtn = document.getElementById('savePreferences');
+        const acceptAllBtn = document.getElementById('acceptAll');
+
+        // Load saved preferences
+        function loadCookiePreferences() {
+            const savedPreferences = localStorage.getItem('cookiePreferences');
+            if (savedPreferences) {
+                const preferences = JSON.parse(savedPreferences);
+                if (performanceCookie) performanceCookie.checked = preferences.performance || false;
+                if (marketingCookie) marketingCookie.checked = preferences.marketing || false;
+                
+                // Update toggle switch visual state
+                updateToggleSwitchState();
+            }
+        }
+
+        // Update toggle switch visual state
+        function updateToggleSwitchState() {
+            const performanceLabel = performanceCookie ? performanceCookie.closest('label') : null;
+            const marketingLabel = marketingCookie ? marketingCookie.closest('label') : null;
+            
+            if (performanceLabel) {
+                if (performanceCookie.checked) {
+                    performanceLabel.classList.add('has-[:checked]:justify-end', 'has-[:checked]:bg-primary');
+                } else {
+                    performanceLabel.classList.remove('has-[:checked]:justify-end', 'has-[:checked]:bg-primary');
+                }
+            }
+            
+            if (marketingLabel) {
+                if (marketingCookie.checked) {
+                    marketingLabel.classList.add('has-[:checked]:justify-end', 'has-[:checked]:bg-primary');
+                } else {
+                    marketingLabel.classList.remove('has-[:checked]:justify-end', 'has-[:checked]:bg-primary');
+                }
+            }
+        }
+
+        // Save preferences
+        function saveCookiePreferences() {
+            const preferences = {
+                performance: performanceCookie ? performanceCookie.checked : false,
+                marketing: marketingCookie ? marketingCookie.checked : false
+            };
+            localStorage.setItem('cookiePreferences', JSON.stringify(preferences));
+            
+            // Update toggle switch visual state
+            updateToggleSwitchState();
+            
+            // Show confirmation
+            showToast('Cookie preferences saved successfully!');
+        }
+
+        // Accept all cookies
+        function acceptAllCookies() {
+            if (performanceCookie) performanceCookie.checked = true;
+            if (marketingCookie) marketingCookie.checked = true;
+            
+            const preferences = {
+                performance: true,
+                marketing: true
+            };
+            localStorage.setItem('cookiePreferences', JSON.stringify(preferences));
+            
+            // Update toggle switch visual state
+            updateToggleSwitchState();
+            
+            // Show confirmation
+            showToast('All cookies accepted!');
+        }
+
+        // Show toast notification
+        function showToast(message) {
+            // Remove existing toast
+            const existingToast = document.querySelector('.cookie-toast');
+            if (existingToast) {
+                existingToast.remove();
+            }
+
+            // Create toast
+            const toast = document.createElement('div');
+            toast.className = 'cookie-toast fixed bottom-4 right-4 bg-primary text-on-primary px-6 py-3 rounded-lg shadow-lg z-50 transform transition-all duration-300 opacity-0 translate-y-2';
+            toast.textContent = message;
+            
+            document.body.appendChild(toast);
+            
+            // Animate in
+            setTimeout(() => {
+                toast.classList.remove('opacity-0', 'translate-y-2');
+                toast.classList.add('opacity-100', 'translate-y-0');
+            }, 100);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', 'translate-y-2');
+                setTimeout(() => {
+                    if (toast.parentNode) {
+                        toast.parentNode.removeChild(toast);
+                    }
+                }, 300);
+            }, 3000);
+        }
+
+        // Event listeners for cookie buttons
+        if (savePreferencesBtn) {
+            savePreferencesBtn.addEventListener('click', saveCookiePreferences);
+        }
+        
+        if (acceptAllBtn) {
+            acceptAllBtn.addEventListener('click', acceptAllCookies);
+        }
+
+        // Add click handlers for toggle switches to update visual state
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('performance-cookie') || e.target.classList.contains('marketing-cookie')) {
+                setTimeout(updateToggleSwitchState, 10);
+            }
+        });
+
+        // Load preferences on page load
+        loadCookiePreferences();
+
+        // Add CSS for toast animation
+        const style = document.createElement('style');
+        style.textContent = `
+            .cookie-toast {
+                transition: all 0.3s ease-in-out;
+            }
+        `;
+        document.head.appendChild(style);
+    });
+</script>
+</body>
+</html>

@@ -1,1 +1,300 @@
-## what shall we 
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - JIKER Loans</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+<!-- Include navbar and footer components -->
+<script src="components/navbar.js" defer></script>
+
+<style type="text/tailwindcss">
+    @layer theme {
+      :root {
+        --md-ref-typeface-brand: 'Manrope';
+        --md-ref-typeface-plain: 'Roboto Flex';--md-sys-color-primary-light: #6A49C2;
+        --md-sys-color-on-primary-light: #FFFFFF;
+        --md-sys-color-primary-container-light: #E9DDFF;
+        --md-sys-color-on-primary-container-light: #22005D;--md-sys-color-secondary-light: #635B70;
+        --md-sys-color-on-secondary-light: #FFFFFF;
+        --md-sys-color-secondary-container-light: #E9DEF8;
+        --md-sys-color-on-secondary-container-light: #1E192B;--md-sys-color-tertiary-light: #7E525D;
+        --md-sys-color-on-tertiary-light: #FFFFFF;
+        --md-sys-color-tertiary-container-light: #FFD9E1;
+        --md-sys-color-on-tertiary-container-light: #31101B;--md-sys-color-surface-light: #FEF7FF;
+        --md-sys-color-on-surface-light: #1D1B20;
+        --md-sys-color-surface-variant-light: #E7E0EB;
+        --md-sys-color-on-surface-variant-light: #49454E;
+        --md-sys-color-surface-container-highest-light: #E6E0E9;
+        --md-sys-color-outline-light: #7A757F;--md-sys-color-background-light: #FEF7FF;
+        --md-sys-color-on-background-light: #1D1B20;--md-sys-color-primary-dark: #CFBCFF;
+        --md-sys-color-on-primary-dark: #3A1290;
+        --md-sys-color-primary-container-dark: #5130A8;
+        --md-sys-color-on-primary-container-dark: #E9DDFF;
+        --md-sys-color-secondary-dark: #CBC3DC;
+        --md-sys-color-on-secondary-dark: #342D41;
+        --md-sys-color-secondary-container-dark: #4B4458;
+        --md-sys-color-on-secondary-container-dark: #E9DEF8;
+        --md-sys-color-tertiary-dark: #F0B8C5;
+        --md-sys-color-on-tertiary-dark: #4A2530;
+        --md-sys-color-tertiary-container-dark: #633B46;
+        --md-sys-color-on-tertiary-container-dark: #FFD9E1;
+        --md-sys-color-surface-dark: #141218;
+        --md-sys-color-on-surface-dark: #E6E1E9;
+        --md-sys-color-surface-variant-dark: #49454E;
+        --md-sys-color-on-surface-variant-dark: #CAC4CF;
+        --md-sys-color-surface-container-highest-dark: #36343B;
+        --md-sys-color-outline-dark: #948F99;
+        --md-sys-color-background-dark: #141218;
+        --md-sys-color-on-background-dark: #E6E1E9;
+      }
+    }
+    </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "var(--md-sys-color-primary-light)",
+            "on-primary": "var(--md-sys-color-on-primary-light)",
+            "primary-container": "var(--md-sys-color-primary-container-light)",
+            "on-primary-container": "var(--md-sys-color-on-primary-container-light)",
+            "secondary": "var(--md-sys-color-secondary-light)",
+            "on-secondary": "var(--md-sys-color-on-secondary-light)",
+            "secondary-container": "var(--md-sys-color-secondary-container-light)",
+            "on-secondary-container": "var(--md-sys-color-on-secondary-container-light)",
+            "tertiary": "var(--md-sys-color-tertiary-light)",
+            "on-tertiary": "var(--md-sys-color-on-tertiary-light)",
+            "tertiary-container": "var(--md-sys-color-tertiary-container-light)",
+            "on-tertiary-container": "var(--md-sys-color-on-tertiary-container-light)",
+            "surface": "var(--md-sys-color-surface-light)",
+            "on-surface": "var(--md-sys-color-on-surface-light)",
+            "surface-variant": "var(--md-sys-color-surface-variant-light)",
+            "on-surface-variant": "var(--md-sys-color-on-surface-variant-light)",
+            "surface-container-highest": "var(--md-sys-color-surface-container-highest-light)",
+            "outline": "var(--md-sys-color-outline-light)",
+            "background": "var(--md-sys-color-background-light)",
+            "on-background": "var(--md-sys-color-on-background-light)",
+            "primary-dark": "var(--md-sys-color-primary-dark)",
+            "on-primary-dark": "var(--md-sys-color-on-primary-dark)",
+            "primary-container-dark": "var(--md-sys-color-primary-container-dark)",
+            "on-primary-container-dark": "var(--md-sys-color-on-primary-container-dark)",
+            "secondary-dark": "var(--md-sys-color-secondary-dark)",
+            "on-secondary-dark": "var(--md-sys-color-on-secondary-dark)",
+            "secondary-container-dark": "var(--md-sys-color-secondary-container-dark)",
+            "on-secondary-container-dark": "var(--md-sys-color-on-secondary-container-dark)",
+            "tertiary-dark": "var(--md-sys-color-tertiary-dark)",
+            "on-tertiary-dark": "var(--md-sys-color-on-tertiary-dark)",
+            "tertiary-container-dark": "var(--md-sys-color-tertiary-container-dark)",
+            "on-tertiary-container-dark": "var(--md-sys-color-on-tertiary-container-dark)",
+            "surface-dark": "var(--md-sys-color-surface-dark)",
+            "on-surface-dark": "var(--md-sys-color-on-surface-dark)",
+            "surface-variant-dark": "var(--md-sys-color-surface-variant-dark)",
+            "on-surface-variant-dark": "var(--md-sys-color-on-surface-variant-dark)",
+            "surface-container-highest-dark": "var(--md-sys-color-surface-container-highest-dark)",
+            "outline-dark": "var(--md-sys-color-outline-dark)",
+            "background-dark": "var(--md-sys-color-background-dark)",
+            "on-background-dark": "var(--md-sys-color-on-background-dark)",
+          },
+          fontFamily: {
+            "display": ["var(--md-ref-typeface-brand)", "sans-serif"],
+            "body": ["var(--md-ref-typeface-plain)", "sans-serif"]
+          },
+          borderRadius: {
+            "xl": "1.75rem",
+            "2xl": "2rem",
+            "3xl": "2.5rem",
+          },
+          keyframes: {
+            shine: {
+              '0%': { transform: 'translateX(-100%) translateY(-100%) rotate(30deg)' },
+              '100%': { transform: 'translateX(100%) translateY(100%) rotate(30deg)' },
+            },
+            float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+            }
+          },
+          animation: {
+            shine: 'shine 2.5s ease-out infinite',
+            float: 'float 4s ease-in-out infinite'
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-background dark:bg-background-dark font-body text-on-background dark:text-on-background-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+  
+  <!-- Include Navbar -->
+  <div id="navbar-container">
+    <!-- navbar.html content will be loaded here -->
+  </div>
+
+  <main class="flex-1 px-4 md:px-10 lg:px-20 py-5">
+    <div class="mx-auto flex max-w-5xl flex-col gap-16 md:gap-24">
+      <!-- Hero Section -->
+      <div class="flex min-h-[480px] flex-col gap-6 rounded-3xl bg-cover bg-center bg-no-repeat items-start justify-end p-8 md:p-12 overflow-hidden" data-alt="University students studying together in a bright, modern library" style="background-image: linear-gradient(rgba(106, 73, 194, 0.1) 0%, rgba(34, 0, 93, 0.7) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdILAE_jSfGrgmNBgAAN6o7kVqY0sA9M7DDTnxMEAML_KjM-vfNGBLvzO1cF3uyFKNY87Agdj4bpjO3RBg0ctWGSo1dzFbMyp6ckndQCc7yN5SMfpWaMUeY8w6VlBQBE8MflgMjcooTAP1l3c-PexgKquudanWODRIUQlKWUYuzcM8ZH7e-plIvj5t8vTcXWTUP4zVxBS5dG-Fp6sJEOU1oi6L8Sg59Tmmhc7l8cNM-d19MJTueVlSR0UzrgNBmUI5BLAII2nuYks');">
+        <div class="flex flex-col gap-4 text-left max-w-2xl">
+          <h1 class="text-white font-display text-4xl font-extrabold leading-tight tracking-[-0.033em] md:text-6xl">Your Financial Partner in Education</h1>
+          <h2 class="text-primary-container dark:text-primary-container-dark/80 text-base font-normal leading-normal md:text-lg">Discover how JIKER Loans is empowering students with fast, flexible, and supportive financial solutions.</h2>
+        </div>
+        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary-dark text-on-primary-dark text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+          <span class="truncate">See Loan Options</span>
+        </button>
+      </div>
+
+      <!-- About Section -->
+      <section>
+        <div class="text-center md:text-left">
+          <h2 class="text-on-surface dark:text-on-surface-dark font-display text-4xl font-bold leading-tight tracking-[-0.015em]">About JIKER Loans</h2>
+          <p class="text-on-surface-variant dark:text-on-surface-variant-dark text-base font-normal leading-relaxed mt-4 max-w-3xl mx-auto md:mx-0">JIKER Loans is a limited liability company established in 2025, specializing in fast, easy, and flexible pocket loans for university and college students. Our core activity is providing secured, affordable credit with immediate electronic funding and flexible repayment terms, designed to fit the unique needs of student life.</p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center md:items-start text-center md:text-left rounded-2xl bg-surface-container-highest dark:bg-surface-container-highest-dark p-6">
+            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary-container dark:bg-primary-container-dark text-on-primary-container dark:text-on-primary-container-dark animate-float [animation-delay:-1s]">
+              <span class="material-symbols-outlined text-4xl">rocket_launch</span>
+            </div>
+            <h3 class="mt-4 text-lg font-bold font-display text-on-surface dark:text-on-surface-dark">Fast &amp; Easy</h3>
+            <p class="mt-1 text-sm text-on-surface-variant dark:text-on-surface-variant-dark leading-relaxed">Quick online applications and immediate electronic funding to get you the cash you need, when you need it.</p>
+          </div>
+          <div class="flex flex-col items-center md:items-start text-center md:text-left rounded-2xl bg-surface-container-highest dark:bg-surface-container-highest-dark p-6">
+            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary-container dark:bg-primary-container-dark text-on-primary-container dark:text-on-primary-container-dark animate-float [animation-delay:-2s]">
+              <span class="material-symbols-outlined text-4xl">verified_user</span>
+            </div>
+            <h3 class="mt-4 text-lg font-bold font-display text-on-surface dark:text-on-surface-dark">Affordable &amp; Secure</h3>
+            <p class="mt-1 text-sm text-on-surface-variant dark:text-on-surface-variant-dark leading-relaxed">Competitive rates and transparent terms, ensuring our loans are affordable and manageable for students.</p>
+          </div>
+          <div class="flex flex-col items-center md:items-start text-center md:text-left rounded-2xl bg-surface-container-highest dark:bg-surface-container-highest-dark p-6">
+            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary-container dark:bg-primary-container-dark text-on-primary-container dark:text-on-primary-container-dark animate-float [animation-delay:-3s]">
+              <span class="material-symbols-outlined text-4xl">event_repeat</span>
+            </div>
+            <h3 class="mt-4 text-lg font-bold font-display text-on-surface dark:text-on-surface-dark">Flexible Repayment</h3>
+            <p class="mt-1 text-sm text-on-surface-variant dark:text-on-surface-variant-dark leading-relaxed">We offer flexible repayment plans that align with your academic calendar and financial situation.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission Section -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div class="relative w-full overflow-hidden rounded-3xl aspect-square md:aspect-auto md:h-full">
+          <img class="h-full w-full object-cover" data-alt="A diverse group of smiling university students walking on campus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp2_IBIUae15ITRExCySmzdgrIdQCmYw-S7DpLCOhq7SNux3142L1g8F40w0E_uMXqKc_2jD1YXFKKV0Fv6rIkZgKN0bQgqZHhM7USK7js7jM0dZxFqlYtjQXbx_zzu0xnpIu7By6tQMpMH0l7Hy8Hgn2KhDhACM6zDj48WpbUeL88bYa3t0E5QIMLnY89lzh1YMqvQcsRHhdmO7BqkYAEzNCrTIVHYy6uX6JXysD_VMZNIa-a4L2KjQ1JrieJ0uhHMyj1sSqPauQ"/>
+        </div>
+        <div class="flex flex-col justify-center">
+          <div class="flex h-20 w-20 items-center justify-center rounded-full bg-tertiary-container dark:bg-tertiary-container-dark text-on-tertiary-container dark:text-on-tertiary-container-dark mb-4 relative overflow-hidden">
+            <span class="material-symbols-outlined text-5xl">trending_up</span>
+            <div class="absolute inset-0 -translate-x-full -translate-y-full animate-shine bg-gradient-to-r from-transparent via-white/40 to-transparent w-1/2 h-full [animation-delay:0.5s]"></div>
+          </div>
+          <h3 class="text-4xl font-bold font-display text-on-surface dark:text-on-surface-dark leading-tight tracking-[-0.015em]">Our Mission: Helping You Prosper</h3>
+          <p class="text-on-surface-variant dark:text-on-surface-variant-dark mt-4 leading-relaxed">Our mission is to help our clients become better off. We are committed to providing progressive and superior financial solutions that not only meet immediate needs but also foster long-term financial well-being and success. We believe in empowering the next generation to achieve their academic and personal goals without financial stress.</p>
+        </div>
+      </section>
+
+      <!-- Founding Story Section -->
+      <section>
+        <div class="text-center">
+          <h2 class="text-on-surface dark:text-on-surface-dark font-display text-4xl font-bold leading-tight tracking-[-0.015em]">Our Founding Story</h2>
+          <p class="text-on-surface-variant dark:text-on-surface-variant-dark text-base font-normal leading-relaxed mt-4 max-w-3xl mx-auto">JIKER Loans was founded by a group of recent graduates who experienced firsthand the financial challenges students face. United by a shared vision, they set out to create a lending service that was truly for students, by students.</p>
+        </div>
+        <div class="grid grid-cols-[auto_1fr] gap-x-4 md:gap-x-6 mt-12 max-w-lg mx-auto">
+          <div class="flex flex-col items-center gap-2 pt-1.5">
+            <div class="relative flex h-10 w-10 items-center justify-center rounded-full bg-secondary-container dark:bg-secondary-container-dark text-on-secondary-container dark:text-on-secondary-container-dark"><span class="material-symbols-outlined">lightbulb</span></div>
+            <div class="w-0.5 grow bg-surface-variant dark:bg-surface-variant-dark"></div>
+          </div>
+          <div class="flex flex-1 flex-col pb-8">
+            <p class="text-on-surface-variant dark:text-on-surface-variant-dark text-sm font-medium leading-normal">2024</p>
+            <p class="text-on-surface dark:text-on-surface-dark text-lg font-bold font-display leading-normal mt-1">The Idea is Born</p>
+            <p class="text-on-surface-variant dark:text-on-surface-variant-dark text-sm mt-1 leading-relaxed">Identifying the need for a better, student-focused lending solution.</p>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-0.5 h-full bg-surface-variant dark:bg-surface-variant-dark"></div>
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-secondary-container dark:bg-secondary-container-dark text-on-secondary-container dark:text-on-secondary-container-dark"><span class="material-symbols-outlined">groups</span></div>
+            <div class="w-0.5 grow bg-surface-variant dark:bg-surface-variant-dark"></div>
+          </div>
+          <div class="flex flex-1 flex-col pb-8">
+            <p class="text-on-surface-variant dark:text-on-surface-variant-dark text-sm font-medium leading-normal">Early 2025</p>
+            <p class="text-on-surface dark:text-on-surface-dark text-lg font-bold font-display leading-normal mt-1">Team Assembled &amp; Platform Built</p>
+            <p class="text-on-surface-variant dark:text-on-surface-variant-dark text-sm mt-1 leading-relaxed">A dedicated team of finance and tech experts came together to build our secure platform.</p>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-0.5 h-full bg-surface-variant dark:bg-surface-variant-dark"></div>
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-secondary-container dark:bg-secondary-container-dark text-on-secondary-container dark:text-on-secondary-container-dark"><span class="material-symbols-outlined">school</span></div>
+          </div>
+          <div class="flex flex-1 flex-col pb-8">
+            <p class="text-on-surface-variant dark:text-on-surface-variant-dark text-sm font-medium leading-normal">Late 2025</p>
+            <p class="text-on-surface dark:text-on-surface-dark text-lg font-bold font-display leading-normal mt-1">JIKER Loans Established</p>
+            <p class="text-on-surface-variant dark:text-on-surface-variant-dark text-sm mt-1 leading-relaxed">Officially launched with a mission to empower students across the country.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="flex flex-col items-center justify-center gap-6 rounded-3xl bg-primary-container dark:bg-primary-container-dark p-10 md:p-16 text-center">
+        <h2 class="text-4xl font-bold font-display leading-tight text-on-primary-container dark:text-on-primary-container-dark">Ready to Secure Your Funds?</h2>
+        <p class="text-on-primary-container dark:text-on-primary-container-dark/90 max-w-xl leading-relaxed">Focus on your studies, not your finances. Apply for a JIKER Loan today and take the first step towards a stress-free semester.</p>
+        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary dark:bg-primary-dark text-on-primary dark:text-on-primary-dark text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+          <span class="truncate">Apply Now</span>
+        </button>
+      </section>
+    </div>
+  </main>
+
+  <!-- Include Footer -->
+  <div id="footer-container">
+    <!-- footer.html content will be loaded here -->
+  </div>
+
+</div>
+</div>
+
+<script>
+  // Load navbar and footer components
+  document.addEventListener('DOMContentLoaded', function() {
+    // Load navbar
+    fetch('components/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading navbar:', error);
+        document.getElementById('navbar-container').innerHTML = '<div class="text-center py-4">Navigation loading failed</div>';
+      });
+    
+    // Load footer
+    fetch('components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading footer:', error);
+        document.getElementById('footer-container').innerHTML = '<div class="text-center py-4">Footer loading failed</div>';
+      });
+  });
+
+  // Apply Now button functionality
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('button') && e.target.closest('button').textContent.includes('Apply Now')) {
+      window.location.href = 'loans.html';
+    }
+    if (e.target.closest('button') && e.target.closest('button').textContent.includes('See Loan Options')) {
+      window.location.href = 'loans.html';
+    }
+  });
+</script>
+
+</body>
+</html>

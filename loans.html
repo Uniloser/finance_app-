@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Loan Information - JIKER Loans</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto+Flex:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+<!-- Include navbar JavaScript -->
+<script src="components/navbar.js" defer></script>
+
+<style type="text/tailwindcss">
+      @layer theme {
+        :root, body.light {
+          /* Color Tokens - Light Theme */
+          --md-ref-typeface-brand: 'Manrope';
+          --md-ref-typeface-plain: 'Roboto Flex';
+          
+          --md-sys-color-primary-light: #6A49C2;
+          --md-sys-color-on-primary-light: #FFFFFF;
+          --md-sys-color-primary-container-light: #E9DDFF;
+          --md-sys-color-on-primary-container-light: #22005D;
+          
+          --md-sys-color-secondary-light: #635B70;
+          --md-sys-color-on-secondary-light: #FFFFFF;
+          --md-sys-color-secondary-container-light: #E9DEF8;
+          --md-sys-color-on-secondary-container-light: #1E192B;
+          
+          --md-sys-color-tertiary-light: #7E525D;
+          --md-sys-color-on-tertiary-light: #FFFFFF;
+          --md-sys-color-tertiary-container-light: #FFD9E1;
+          --md-sys-color-on-tertiary-container-light: #31101B;
+          
+          --md-sys-color-surface-light: #FEF7FF;
+          --md-sys-color-on-surface-light: #1D1B20;
+          --md-sys-color-surface-variant-light: #E7E0EB;
+          --md-sys-color-on-surface-variant-light: #49454E;
+          --md-sys-color-surface-container-highest-light: #E6E0E9;
+          --md-sys-color-outline-light: #7A757F;
+          --md-sys-color-background-light: #FEF7FF;
+          --md-sys-color-on-background-light: #1D1B20;
+
+          /* Color Tokens - Dark Theme */
+          --md-sys-color-primary-dark: #CFBCFF;
+          --md-sys-color-on-primary-dark: #3A1290;
+          --md-sys-color-primary-container-dark: #5130A8;
+          --md-sys-color-on-primary-container-dark: #E9DDFF;
+          
+          --md-sys-color-secondary-dark: #CBC3DC;
+          --md-sys-color-on-secondary-dark: #342D41;
+          --md-sys-color-secondary-container-dark: #4B4458;
+          --md-sys-color-on-secondary-container-dark: #E9DEF8;
+          
+          --md-sys-color-tertiary-dark: #F0B8C5;
+          --md-sys-color-on-tertiary-dark: #4A2530;
+          --md-sys-color-tertiary-container-dark: #633B46;
+          --md-sys-color-on-tertiary-container-dark: #FFD9E1;
+          
+          --md-sys-color-surface-dark: #141218;
+          --md-sys-color-on-surface-dark: #E6E1E9;
+          --md-sys-color-surface-variant-dark: #49454E;
+          --md-sys-color-on-surface-variant-dark: #CAC4CF;
+          --md-sys-color-surface-container-highest-dark: #36343B;
+          --md-sys-color-outline-dark: #948F99;
+          --md-sys-color-background-dark: #141218;
+          --md-sys-color-on-background-dark: #E6E1E9;
+
+          /* Apply light theme by default */
+          --primary: var(--md-sys-color-primary-light);
+          --on-primary: var(--md-sys-color-on-primary-light);
+          --primary-container: var(--md-sys-color-primary-container-light);
+          --on-primary-container: var(--md-sys-color-on-primary-container-light);
+          --secondary: var(--md-sys-color-secondary-light);
+          --on-secondary: var(--md-sys-color-on-secondary-light);
+          --secondary-container: var(--md-sys-color-secondary-container-light);
+          --on-secondary-container: var(--md-sys-color-on-secondary-container-light);
+          --tertiary: var(--md-sys-color-tertiary-light);
+          --on-tertiary: var(--md-sys-color-on-tertiary-light);
+          --tertiary-container: var(--md-sys-color-tertiary-container-light);
+          --on-tertiary-container: var(--md-sys-color-on-tertiary-container-light);
+          --surface: var(--md-sys-color-surface-light);
+          --on-surface: var(--md-sys-color-on-surface-light);
+          --surface-variant: var(--md-sys-color-surface-variant-light);
+          --on-surface-variant: var(--md-sys-color-on-surface-variant-light);
+          --outline: var(--md-sys-color-outline-light);
+          --background: var(--md-sys-color-background-light);
+          --on-background: var(--md-sys-color-on-background-light);
+          --surface-container-highest: var(--md-sys-color-surface-container-highest-light);
+        }
+        body.dark {
+          /* Apply dark theme */
+          --primary: var(--md-sys-color-primary-dark);
+          --on-primary: var(--md-sys-color-on-primary-dark);
+          --primary-container: var(--md-sys-color-primary-container-dark);
+          --on-primary-container: var(--md-sys-color-on-primary-container-dark);
+          --secondary: var(--md-sys-color-secondary-dark);
+          --on-secondary: var(--md-sys-color-on-secondary-dark);
+          --secondary-container: var(--md-sys-color-secondary-container-dark);
+          --on-secondary-container: var(--md-sys-color-on-secondary-container-dark);
+          --tertiary: var(--md-sys-color-tertiary-dark);
+          --on-tertiary: var(--md-sys-color-on-tertiary-dark);
+          --tertiary-container: var(--md-sys-color-tertiary-container-dark);
+          --on-tertiary-container: var(--md-sys-color-on-tertiary-container-dark);
+          --surface: var(--md-sys-color-surface-dark);
+          --on-surface: var(--md-sys-color-on-surface-dark);
+          --surface-variant: var(--md-sys-color-surface-variant-dark);
+          --on-surface-variant: var(--md-sys-color-on-surface-variant-dark);
+          --outline: var(--md-sys-color-outline-dark);
+          --background: var(--md-sys-color-background-dark);
+          --on-background: var(--md-sys-color-on-background-dark);
+          --surface-container-highest: var(--md-sys-color-surface-container-highest-dark);
+        }
+      }
+    </style>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "var(--primary)",
+            "on-primary": "var(--on-primary)",
+            "primary-container": "var(--primary-container)",
+            "on-primary-container": "var(--on-primary-container)",
+            secondary: "var(--secondary)",
+            "on-secondary": "var(--on-secondary)",
+            "secondary-container": "var(--secondary-container)",
+            "on-secondary-container": "var(--on-secondary-container)",
+            tertiary: "var(--tertiary)",
+            "on-tertiary": "var(--on-tertiary)",
+            "tertiary-container": "var(--tertiary-container)",
+            "on-tertiary-container": "var(--on-tertiary-container)",
+            surface: "var(--surface)",
+            "on-surface": "var(--on-surface)",
+            "surface-variant": "var(--surface-variant)",
+            "on-surface-variant": "var(--on-surface-variant)",
+            outline: "var(--outline)",
+            background: "var(--background)",
+            "on-background": "var(--on-background)",
+            "surface-container-highest": "var(--surface-container-highest)",
+          },
+          fontFamily: {
+            display: ["Manrope", "sans-serif"],
+            body: ["Roboto Flex", "sans-serif"],
+          },
+          borderRadius: {
+            "xl": "1.5rem",
+            "2xl": "2rem",
+            "3xl": "2.5rem",
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Roboto Flex', sans-serif;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .font-display {
+      font-family: 'Manrope', sans-serif;
+    }
+    
+    /* Modal animations */
+    @keyframes modalFadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    .modal-open {
+      overflow: hidden;
+    }
+    
+    .modal-backdrop {
+      animation: modalFadeIn 0.2s ease-out;
+    }
+    
+    .modal-content {
+      animation: modalFadeIn 0.3s ease-out;
+    }
+
+    /* Loan type selection styles */
+    .loan-type-option {
+      transition: all 0.2s ease-in-out;
+    }
+    
+    .loan-type-option.selected {
+      border-color: var(--primary);
+      background-color: color-mix(in srgb, var(--primary-container) 20%, transparent);
+    }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface">
+<div class="relative flex min-h-screen w-full flex-col">
+  
+  <!-- Navbar Container -->
+  <div id="navbar-container">
+    <!-- navbar.html content will be loaded here -->
+  </div>
+
+<main class="flex-grow">
+<div class="mx-auto max-w-6xl px-4 py-10 sm:py-16">
+<section class="@container text-center">
+<div class="flex flex-col items-center gap-6 px-4 py-10">
+<div class="flex flex-col gap-4">
+<h1 class="font-display text-on-background text-5xl font-black leading-tight tracking-tighter @[480px]:text-6xl @[864px]:text-7xl">
+                Student Loans, <span class="text-primary">Made Simple.</span>
+</h1>
+<p class="text-on-surface-variant text-lg @[480px]:text-xl max-w-3xl mx-auto">
+                Fast, flexible funding to help you focus on your studies. We provide progressive and superior financial solutions for university and college students.
+              </p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 @[480px]:h-14 @[480px]:px-10 bg-primary text-on-primary text-base font-bold leading-normal tracking-wide @[480px]:text-lg hover:shadow-lg hover:shadow-primary/30 transition-shadow">
+<span class="truncate">See Your Options</span>
+</button>
+</div>
+</section>
+<section class="py-10 sm:py-16">
+<h2 class="font-display text-on-background text-3xl font-bold leading-tight tracking-tight px-4 pb-8">Find the Right Loan for You</h2>
+<div class="flex overflow-x-auto pb-4 [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+<div class="flex items-stretch p-4 gap-6">
+<!-- Textbook Loan Card -->
+<div class="flex h-full w-72 flex-shrink-0 flex-col gap-4 rounded-3xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-center rounded-t-3xl bg-primary-container p-8">
+<span class="material-symbols-outlined !text-7xl text-on-primary-container">auto_stories</span>
+</div>
+<div class="flex flex-col flex-1 justify-between p-5 pt-0 gap-4">
+<div>
+<p class="font-display text-on-surface text-lg font-bold leading-normal">Textbook Loan</p>
+<p class="text-on-surface-variant text-sm font-normal leading-normal">Cover the cost of all your required course materials for the semester.</p>
+</div>
+<button class="learn-more-btn flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-secondary-container text-on-secondary-container text-sm font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity" data-loan-type="textbook">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+
+<!-- Semester Fee Loan Card -->
+<div class="flex h-full w-72 flex-shrink-0 flex-col gap-4 rounded-3xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-center rounded-t-3xl bg-secondary-container p-8">
+<span class="material-symbols-outlined !text-7xl text-on-secondary-container">school</span>
+</div>
+<div class="flex flex-col flex-1 justify-between p-5 pt-0 gap-4">
+<div>
+<p class="font-display text-on-surface text-lg font-bold leading-normal">Semester Fee Loan</p>
+<p class="text-on-surface-variant text-sm font-normal leading-normal">Secure your spot for the semester without financial stress.</p>
+</div>
+<button class="learn-more-btn flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-secondary-container text-on-secondary-container text-sm font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity" data-loan-type="semester">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+
+<!-- Project Funding Loan Card -->
+<div class="flex h-full w-72 flex-shrink-0 flex-col gap-4 rounded-3xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-center rounded-t-3xl bg-tertiary-container p-8">
+<span class="material-symbols-outlined !text-7xl text-on-tertiary-container">lightbulb</span>
+</div>
+<div class="flex flex-col flex-1 justify-between p-5 pt-0 gap-4">
+<div>
+<p class="font-display text-on-surface text-lg font-bold leading-normal">Project Funding Loan</p>
+<p class="text-on-surface-variant text-sm font-normal leading-normal">Get the funds you need for your final year project or startup idea.</p>
+</div>
+<button class="learn-more-btn flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-secondary-container text-on-secondary-container text-sm font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity" data-loan-type="project">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+
+<!-- Emergency Cash Card -->
+<div class="flex h-full w-72 flex-shrink-0 flex-col gap-4 rounded-3xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-center rounded-t-3xl bg-primary-container p-8">
+<span class="material-symbols-outlined !text-7xl text-on-primary-container">local_atm</span>
+</div>
+<div class="flex flex-col flex-1 justify-between p-5 pt-0 gap-4">
+<div>
+<p class="font-display text-on-surface text-lg font-bold leading-normal">Emergency Cash</p>
+<p class="text-on-surface-variant text-sm font-normal leading-normal">Access quick funds for unexpected personal expenses.</p>
+</div>
+<button class="learn-more-btn flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-secondary-container text-on-secondary-container text-sm font-bold leading-normal tracking-wide hover:opacity-90 transition-opacity" data-loan-type="emergency">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-10 sm:py-16">
+<div class="pb-3">
+<div class="flex border-b border-outline/30 px-4 gap-8">
+<a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-[13px] pt-4 cursor-pointer" data-tab="how-to-apply">
+<p class="font-display text-base font-bold leading-normal tracking-wide">How to Apply</p>
+</a>
+<a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-on-surface-variant pb-[13px] pt-4 hover:border-b-primary/50 hover:text-on-surface transition-colors cursor-pointer" data-tab="eligibility">
+<p class="font-display text-base font-bold leading-normal tracking-wide">Eligibility</p>
+</a>
+<a class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-on-surface-variant pb-[13px] pt-4 hover:border-b-primary/50 hover:text-on-surface transition-colors cursor-pointer" data-tab="rates-terms">
+<p class="font-display text-base font-bold leading-normal tracking-wide">Rates & Terms</p>
+</a>
+</div>
+</div>
+<div class="px-4 py-8">
+<!-- How to Apply Tab Content -->
+<div id="how-to-apply" class="tab-content active">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+<div class="flex flex-col items-center gap-4">
+<div class="flex h-24 w-24 items-center justify-center rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined !text-5xl">person_add</span>
+</div>
+<h3 class="font-display text-xl font-bold text-on-surface">1. Sign Up</h3>
+<p class="text-on-surface-variant text-sm">Create your account in just a few minutes with your student email.</p>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="flex h-24 w-24 items-center justify-center rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined !text-5xl">verified_user</span>
+</div>
+<h3 class="font-display text-xl font-bold text-on-surface">2. Verify Identity</h3>
+<p class="text-on-surface-variant text-sm">Upload your student ID and a government-issued ID for quick verification.</p>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="flex h-24 w-24 items-center justify-center rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined !text-5xl">task_alt</span>
+</div>
+<h3 class="font-display text-xl font-bold text-on-surface">3. Get Approved</h3>
+<p class="text-on-surface-variant text-sm">Our system reviews your application instantly. Most students are approved in minutes.</p>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="flex h-24 w-24 items-center justify-center rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined !text-5xl">payments</span>
+</div>
+<h3 class="font-display text-xl font-bold text-on-surface">4. Receive Funds</h3>
+<p class="text-on-surface-variant text-sm">Your loan is deposited directly into your bank account, typically within 24 hours.</p>
+</div>
+</div>
+</div>
+
+<!-- Eligibility Tab Content -->
+<div id="eligibility" class="tab-content hidden">
+<div class="max-w-4xl mx-auto space-y-6">
+<div class="bg-surface-container-lowest rounded-2xl p-6">
+<h3 class="font-display text-xl font-bold text-on-surface mb-3">Student Requirements</h3>
+<ul class="text-on-surface-variant space-y-2">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<span>Currently enrolled in an accredited university or college</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<span>Minimum GPA of 2.5 or equivalent</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<span>At least one semester completed</span>
+</li>
+</ul>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-6">
+<h3 class="font-display text-xl font-bold text-on-surface mb-3">Documentation Needed</h3>
+<ul class="text-on-surface-variant space-y-2">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5">description</span>
+<span>Valid student ID card</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5">description</span>
+<span>Government-issued photo ID</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5">description</span>
+<span>Proof of enrollment</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Rates & Terms Tab Content -->
+<div id="rates-terms" class="tab-content hidden">
+<div class="max-w-4xl mx-auto space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest rounded-2xl p-6">
+<h3 class="font-display text-xl font-bold text-on-surface mb-3">Interest Rates</h3>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Textbook Loans</span>
+<span class="font-display font-bold text-primary">4.5% - 6.5%</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Semester Fee Loans</span>
+<span class="font-display font-bold text-primary">5.0% - 7.0%</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Project Funding</span>
+<span class="font-display font-bold text-primary">6.0% - 8.0%</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Emergency Cash</span>
+<span class="font-display font-bold text-primary">5.5% - 7.5%</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-6">
+<h3 class="font-display text-xl font-bold text-on-surface mb-3">Loan Terms</h3>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Minimum Loan</span>
+<span class="font-display font-bold text-primary">K 500</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Maximum Loan</span>
+<span class="font-display font-bold text-primary">K 25,000</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Repayment Period</span>
+<span class="font-display font-bold text-primary">6-24 months</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-10 sm:py-16">
+<div class="bg-surface-container-lowest rounded-3xl p-6 md:p-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+<div>
+<h2 class="font-display text-on-background text-3xl font-bold leading-tight tracking-tight mb-4">Estimate Your Loan</h2>
+<p class="text-on-surface-variant mb-6">Select your loan type and adjust the amount and term to see your estimated payments.</p>
+  
+<!-- Loan Type Selection -->
+<div class="mb-6">
+  <label class="block text-sm font-medium text-on-surface-variant mb-3">Loan Type</label>
+  <div class="grid grid-cols-2 gap-3">
+    <div class="loan-type-option border-2 border-outline/20 rounded-2xl p-4 cursor-pointer text-center transition-all" data-loan-type="textbook" data-interest-rate="5.5">
+      <div class="flex flex-col items-center gap-2">
+        <span class="material-symbols-outlined text-on-surface-variant">auto_stories</span>
+        <span class="text-sm font-medium text-on-surface">Textbook</span>
+        <span class="text-xs text-on-surface-variant">5.5% APR</span>
+      </div>
+    </div>
+    <div class="loan-type-option border-2 border-outline/20 rounded-2xl p-4 cursor-pointer text-center transition-all" data-loan-type="semester" data-interest-rate="6.0">
+      <div class="flex flex-col items-center gap-2">
+        <span class="material-symbols-outlined text-on-surface-variant">school</span>
+        <span class="text-sm font-medium text-on-surface">Semester</span>
+        <span class="text-xs text-on-surface-variant">6.0% APR</span>
+      </div>
+    </div>
+    <div class="loan-type-option border-2 border-outline/20 rounded-2xl p-4 cursor-pointer text-center transition-all" data-loan-type="project" data-interest-rate="7.0">
+      <div class="flex flex-col items-center gap-2">
+        <span class="material-symbols-outlined text-on-surface-variant">lightbulb</span>
+        <span class="text-sm font-medium text-on-surface">Project</span>
+        <span class="text-xs text-on-surface-variant">7.0% APR</span>
+      </div>
+    </div>
+    <div class="loan-type-option border-2 border-outline/20 rounded-2xl p-4 cursor-pointer text-center transition-all" data-loan-type="emergency" data-interest-rate="6.5">
+      <div class="flex flex-col items-center gap-2">
+        <span class="material-symbols-outlined text-on-surface-variant">local_atm</span>
+        <span class="text-sm font-medium text-on-surface">Emergency</span>
+        <span class="text-xs text-on-surface-variant">6.5% APR</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-on-surface-variant mb-2" for="loanAmount">Loan Amount: <span id="loanAmountValue" class="font-bold text-primary">K 5,000</span></label>
+<input class="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" id="loanAmount" max="25000" min="500" step="500" type="range" value="5000"/>
+<div class="flex justify-between text-xs text-on-surface-variant mt-1">
+  <span>K 500</span>
+  <span>K 25,000</span>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-on-surface-variant mb-2" for="loanDuration">Repayment Term: <span id="loanDurationValue" class="font-bold text-primary">12 Months</span></label>
+<input class="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" id="loanDuration" max="24" min="6" step="1" type="range" value="12"/>
+<div class="flex justify-between text-xs text-on-surface-variant mt-1">
+  <span>6 months</span>
+  <span>24 months</span>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-2xl p-4">
+  <div class="flex justify-between items-center">
+    <span class="text-on-surface-variant text-sm">Interest Rate</span>
+    <span id="interestRateValue" class="font-display font-bold text-primary text-lg">5.5% APR</span>
+  </div>
+  <p class="text-xs text-on-surface-variant mt-1">Rate is fixed based on your loan type</p>
+</div>
+</div>
+</div>
+<div class="bg-primary-container rounded-3xl p-8 text-center">
+<p class="text-sm text-on-primary-container font-bold uppercase tracking-widest mb-2">ESTIMATED MONTHLY PAYMENT</p>
+<p id="monthlyPayment" class="font-display text-5xl font-black text-on-primary-container mb-4">K 430</p>
+<div class="text-xs text-on-primary-container/70 space-y-1">
+<p id="totalPayment">Total Payment: K 5,160</p>
+<p id="totalInterest">Total Interest: K 160</p>
+<p>This is an estimate based on your selected loan type.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-10 sm:py-16">
+<h2 class="font-display text-on-background text-3xl font-bold leading-tight tracking-tight px-4 pb-6 text-center">Frequently Asked Questions</h2>
+<div class="max-w-3xl mx-auto space-y-4 px-4">
+<details class="group bg-surface-container-lowest rounded-2xl p-5 cursor-pointer">
+<summary class="flex items-center justify-between font-bold text-on-surface text-lg list-none">
+                Is my personal data safe?
+                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4">Absolutely. We use bank-level encryption and robust security protocols to protect your information at all times. Your privacy and security are our top priorities.</p>
+</details>
+<details class="group bg-surface-container-lowest rounded-2xl p-5 cursor-pointer">
+<summary class="flex items-center justify-between font-bold text-on-surface text-lg list-none">
+                What happens if I miss a payment?
+                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4">We understand that student life can be unpredictable. We offer flexible options, including payment pauses and adjusted schedules. Contact our support team to discuss your situation.</p>
+</details>
+<details class="group bg-surface-container-lowest rounded-2xl p-5 cursor-pointer">
+<summary class="flex items-center justify-between font-bold text-on-surface text-lg list-none">
+                Are there any hidden fees?
+                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4">No. JIKER Loans is committed to transparency. We have no origination fees, no prepayment penalties, and no hidden charges. Everything is clearly outlined in your loan agreement.</p>
+</details>
+</div>
+</section>
+</div>
+</main>
+
+  <!-- Footer Container -->
+  <div id="footer-container">
+    <!-- footer.html content will be loaded here -->
+  </div>
+
+</div>
+
+<!-- Modal Backdrop -->
+<div id="modalBackdrop" class="fixed inset-0 bg-black/50 z-[100] hidden modal-backdrop"></div>
+
+<!-- Textbook Loan Modal -->
+<div id="textbookModal" class="fixed inset-0 z-[101] flex items-center justify-center p-4 hidden">
+<div class="modal-content bg-surface-container-lowest rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-hidden">
+<div class="flex items-center justify-between p-6 border-b border-outline/20">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center rounded-2xl bg-primary-container p-3">
+<span class="material-symbols-outlined !text-4xl text-on-primary-container">auto_stories</span>
+</div>
+<div>
+<h3 class="font-display text-2xl font-bold text-on-surface">Textbook Loan</h3>
+<p class="text-on-surface-variant">Essential reading materials covered</p>
+</div>
+</div>
+<button class="close-modal p-2 rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-6 overflow-y-auto max-h-[60vh]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div class="space-y-4">
+<h4 class="font-display text-lg font-bold text-on-surface">Loan Details</h4>
+<div class="space-y-3">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Loan Amount</span>
+<span class="font-bold text-primary">K 500 - K 3,000</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Interest Rate</span>
+<span class="font-bold text-primary">4.5% - 6.5% APR</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Repayment Term</span>
+<span class="font-bold text-primary">6-12 months</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Funding Time</span>
+<span class="font-bold text-primary">24 hours</span>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-display text-lg font-bold text-on-surface">Benefits</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Cover all required textbooks</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>New and used book options</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Digital materials included</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Access codes covered</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-primary-container/20 rounded-2xl p-4">
+<h4 class="font-display font-bold text-on-surface mb-2">Perfect For</h4>
+<p class="text-on-surface-variant text-sm">Students who need to purchase expensive course materials, textbooks, access codes, and digital resources for their classes.</p>
+</div>
+</div>
+<div class="flex gap-3 p-6 border-t border-outline/20">
+<button class="flex-1 close-modal py-3 px-6 rounded-full border border-outline text-on-surface font-bold hover:bg-surface-container transition-colors">
+Cancel
+</button>
+<button class="flex-1 py-3 px-6 rounded-full bg-primary text-on-primary font-bold hover:opacity-90 transition-opacity">
+Apply Now
+</button>
+</div>
+</div>
+</div>
+
+<!-- Semester Fee Loan Modal -->
+<div id="semesterModal" class="fixed inset-0 z-[101] flex items-center justify-center p-4 hidden">
+<div class="modal-content bg-surface-container-lowest rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-hidden">
+<div class="flex items-center justify-between p-6 border-b border-outline/20">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center rounded-2xl bg-secondary-container p-3">
+<span class="material-symbols-outlined !text-4xl text-on-secondary-container">school</span>
+</div>
+<div>
+<h3 class="font-display text-2xl font-bold text-on-surface">Semester Fee Loan</h3>
+<p class="text-on-surface-variant">Secure your academic journey</p>
+</div>
+</div>
+<button class="close-modal p-2 rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-6 overflow-y-auto max-h-[60vh]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div class="space-y-4">
+<h4 class="font-display text-lg font-bold text-on-surface">Loan Details</h4>
+<div class="space-y-3">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Loan Amount</span>
+<span class="font-bold text-primary">K 1,500 - K 25,000</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Interest Rate</span>
+<span class="font-bold text-primary">5.0% - 7.0% APR</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Repayment Term</span>
+<span class="font-bold text-primary">12-24 months</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Funding Time</span>
+<span class="font-bold text-primary">48 hours</span>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-display text-lg font-bold text-on-surface">Coverage</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Tuition fees</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Registration fees</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Laboratory fees</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Technology fees</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-secondary-container/20 rounded-2xl p-4">
+<h4 class="font-display font-bold text-on-surface mb-2">Ideal For</h4>
+<p class="text-on-surface-variant text-sm">Students needing to cover semester tuition and university fees to maintain enrollment and continue their education without interruption.</p>
+</div>
+</div>
+<div class="flex gap-3 p-6 border-t border-outline/20">
+<button class="flex-1 close-modal py-3 px-6 rounded-full border border-outline text-on-surface font-bold hover:bg-surface-container transition-colors">
+Cancel
+</button>
+<button class="flex-1 py-3 px-6 rounded-full bg-primary text-on-primary font-bold hover:opacity-90 transition-opacity">
+Apply Now
+</button>
+</div>
+</div>
+</div>
+
+<!-- Project Funding Loan Modal -->
+<div id="projectModal" class="fixed inset-0 z-[101] flex items-center justify-center p-4 hidden">
+<div class="modal-content bg-surface-container-lowest rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-hidden">
+<div class="flex items-center justify-between p-6 border-b border-outline/20">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center rounded-2xl bg-tertiary-container p-3">
+<span class="material-symbols-outlined !text-4xl text-on-tertiary-container">lightbulb</span>
+</div>
+<div>
+<h3 class="font-display text-2xl font-bold text-on-surface">Project Funding Loan</h3>
+<p class="text-on-surface-variant">Bring your ideas to life</p>
+</div>
+</div>
+<button class="close-modal p-2 rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-6 overflow-y-auto max-h-[60vh]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div class="space-y-4">
+<h4 class="font-display text-lg font-bold text-on-surface">Loan Details</h4>
+<div class="space-y-3">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Loan Amount</span>
+<span class="font-bold text-primary">K 800 - K 15,000</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Interest Rate</span>
+<span class="font-bold text-primary">6.0% - 8.0% APR</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Repayment Term</span>
+<span class="font-bold text-primary">6-18 months</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Funding Time</span>
+<span class="font-bold text-primary">72 hours</span>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-display text-lg font-bold text-on-surface">Supported Projects</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Final year projects</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Research materials</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Prototype development</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Startup initiatives</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-tertiary-container/20 rounded-2xl p-4">
+<h4 class="font-display font-bold text-on-surface mb-2">Great For</h4>
+<p class="text-on-surface-variant text-sm">Ambitious students working on capstone projects, research initiatives, or entrepreneurial ventures that require funding for materials and resources.</p>
+</div>
+</div>
+<div class="flex gap-3 p-6 border-t border-outline/20">
+<button class="flex-1 close-modal py-3 px-6 rounded-full border border-outline text-on-surface font-bold hover:bg-surface-container transition-colors">
+Cancel
+</button>
+<button class="flex-1 py-3 px-6 rounded-full bg-primary text-on-primary font-bold hover:opacity-90 transition-opacity">
+Apply Now
+</button>
+</div>
+</div>
+</div>
+
+<!-- Emergency Cash Modal -->
+<div id="emergencyModal" class="fixed inset-0 z-[101] flex items-center justify-center p-4 hidden">
+<div class="modal-content bg-surface-container-lowest rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-hidden">
+<div class="flex items-center justify-between p-6 border-b border-outline/20">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center rounded-2xl bg-primary-container p-3">
+<span class="material-symbols-outlined !text-4xl text-on-primary-container">local_atm</span>
+</div>
+<div>
+<h3 class="font-display text-2xl font-bold text-on-surface">Emergency Cash</h3>
+<p class="text-on-surface-variant">When you need it most</p>
+</div>
+</div>
+<button class="close-modal p-2 rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-6 overflow-y-auto max-h-[60vh]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div class="space-y-4">
+<h4 class="font-display text-lg font-bold text-on-surface">Loan Details</h4>
+<div class="space-y-3">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Loan Amount</span>
+<span class="font-bold text-primary">K 300 - K 5,000</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Interest Rate</span>
+<span class="font-bold text-primary">5.5% - 7.5% APR</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Repayment Term</span>
+<span class="font-bold text-primary">3-9 months</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Funding Time</span>
+<span class="font-bold text-primary">12 hours</span>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-display text-lg font-bold text-on-surface">Covered Situations</h4>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Medical emergencies</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Travel emergencies</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Housing issues</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary mt-0.5 text-sm">check</span>
+<span>Urgent repairs</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-primary-container/20 rounded-2xl p-4">
+<h4 class="font-display font-bold text-on-surface mb-2">Essential For</h4>
+<p class="text-on-surface-variant text-sm">Students facing unexpected financial emergencies that require immediate attention, ensuring you can focus on your studies without financial stress.</p>
+</div>
+</div>
+<div class="flex gap-3 p-6 border-t border-outline/20">
+<button class="flex-1 close-modal py-3 px-6 rounded-full border border-outline text-on-surface font-bold hover:bg-surface-container transition-colors">
+Cancel
+</button>
+<button class="flex-1 py-3 px-6 rounded-full bg-primary text-on-primary font-bold hover:opacity-90 transition-opacity">
+Apply Now
+</button>
+</div>
+</div>
+</div>
+
+<script>
+    // Load navbar and footer components
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load navbar
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading navbar:', error);
+                document.getElementById('navbar-container').innerHTML = '<div class="text-center py-4">Navigation loading failed</div>';
+            });
+        
+        // Load footer
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading footer:', error);
+                document.getElementById('footer-container').innerHTML = '<div class="text-center py-4">Footer loading failed</div>';
+            });
+    });
+
+    // Loan type interest rates (predefined)
+    const loanRates = {
+        textbook: 5.5,
+        semester: 6.0,
+        project: 7.0,
+        emergency: 6.5
+    };
+
+    // Tab functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        // Tab switching
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                const targetTab = this.getAttribute('data-tab');
+                
+                // Update active tab link
+                tabLinks.forEach(tab => {
+                    tab.classList.remove('border-b-primary', 'text-primary');
+                    tab.classList.add('border-b-transparent', 'text-on-surface-variant');
+                });
+                this.classList.add('border-b-primary', 'text-primary');
+                this.classList.remove('border-b-transparent', 'text-on-surface-variant');
+                
+                // Show target tab content
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                    content.classList.remove('active');
+                });
+                const targetContent = document.getElementById(targetTab);
+                targetContent.classList.remove('hidden');
+                targetContent.classList.add('active');
+            });
+        });
+
+        // Loan calculator functionality
+        const loanAmountSlider = document.getElementById('loanAmount');
+        const loanDurationSlider = document.getElementById('loanDuration');
+        const loanAmountValue = document.getElementById('loanAmountValue');
+        const loanDurationValue = document.getElementById('loanDurationValue');
+        const interestRateValue = document.getElementById('interestRateValue');
+        const monthlyPaymentElement = document.getElementById('monthlyPayment');
+        const totalPaymentElement = document.getElementById('totalPayment');
+        const totalInterestElement = document.getElementById('totalInterest');
+        const loanTypeOptions = document.querySelectorAll('.loan-type-option');
+
+        let selectedLoanType = 'textbook'; // Default selection
+        let currentInterestRate = loanRates[selectedLoanType];
+
+        // Initialize loan type selection
+        function initializeLoanTypeSelection() {
+            loanTypeOptions.forEach(option => {
+                if (option.getAttribute('data-loan-type') === selectedLoanType) {
+                    option.classList.add('selected', 'border-primary');
+                    option.classList.remove('border-outline/20');
+                }
+                
+                option.addEventListener('click', function() {
+                    // Remove selection from all options
+                    loanTypeOptions.forEach(opt => {
+                        opt.classList.remove('selected', 'border-primary');
+                        opt.classList.add('border-outline/20');
+                    });
+                    
+                    // Add selection to clicked option
+                    this.classList.add('selected', 'border-primary');
+                    this.classList.remove('border-outline/20');
+                    
+                    // Update selected loan type and interest rate
+                    selectedLoanType = this.getAttribute('data-loan-type');
+                    currentInterestRate = parseFloat(this.getAttribute('data-interest-rate'));
+                    
+                    // Update interest rate display
+                    interestRateValue.textContent = `${currentInterestRate}% APR`;
+                    
+                    // Recalculate loan
+                    calculateLoan();
+                });
+            });
+        }
+
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('en-ZM', {
+                style: 'currency',
+                currency: 'ZMW',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(amount).replace('ZMW', 'K');
+        }
+
+        function calculateLoan() {
+            const loanAmount = parseFloat(loanAmountSlider.value);
+            const loanDuration = parseFloat(loanDurationSlider.value);
+            const annualInterestRate = currentInterestRate;
+            
+            // Update display values
+            loanAmountValue.textContent = formatCurrency(loanAmount);
+            loanDurationValue.textContent = `${loanDuration} Months`;
+            
+            // Calculate monthly payment
+            const monthlyInterestRate = (annualInterestRate / 100) / 12;
+            const monthlyPayment = loanAmount * monthlyInterestRate * 
+                Math.pow(1 + monthlyInterestRate, loanDuration) / 
+                (Math.pow(1 + monthlyInterestRate, loanDuration) - 1);
+            
+            const totalPayment = monthlyPayment * loanDuration;
+            const totalInterest = totalPayment - loanAmount;
+            
+            // Update results
+            monthlyPaymentElement.textContent = formatCurrency(Math.round(monthlyPayment));
+            totalPaymentElement.textContent = `Total Payment: ${formatCurrency(Math.round(totalPayment))}`;
+            totalInterestElement.textContent = `Total Interest: ${formatCurrency(Math.round(totalInterest))}`;
+        }
+
+        // Initialize calculator and loan type selection
+        initializeLoanTypeSelection();
+        calculateLoan();
+
+        // Add event listeners for real-time calculation
+        loanAmountSlider.addEventListener('input', calculateLoan);
+        loanDurationSlider.addEventListener('input', calculateLoan);
+
+        // Modal functionality
+        const modalBackdrop = document.getElementById('modalBackdrop');
+        const learnMoreButtons = document.querySelectorAll('.learn-more-btn');
+        const closeButtons = document.querySelectorAll('.close-modal');
+
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modalBackdrop.classList.remove('hidden');
+            modal.classList.remove('hidden');
+            document.body.classList.add('modal-open');
+        }
+
+        function closeModal() {
+            modalBackdrop.classList.add('hidden');
+            document.querySelectorAll('[id$="Modal"]').forEach(modal => {
+                modal.classList.add('hidden');
+            });
+            document.body.classList.remove('modal-open');
+        }
+
+        // Learn More button events
+        learnMoreButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const loanType = this.getAttribute('data-loan-type');
+                openModal(`${loanType}Modal`);
+            });
+        });
+
+        // Close button events
+        closeButtons.forEach(button => {
+            button.addEventListener('click', closeModal);
+        });
+
+        // Backdrop click event
+        modalBackdrop.addEventListener('click', closeModal);
+
+        // Escape key to close modal
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Prevent modal content click from closing modal
+        document.querySelectorAll('[id$="Modal"] .modal-content').forEach(modalContent => {
+            modalContent.addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+        });
+
+        // Apply Now button functionality
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('button') && e.target.closest('button').textContent.includes('Apply Now')) {
+                // Handle Apply Now button clicks
+                console.log('Apply Now clicked');
+            }
+            if (e.target.closest('button') && e.target.closest('button').textContent.includes('See Your Options')) {
+                // Scroll to loan calculator section
+                document.querySelector('section.py-10.sm\\:py-16').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+</body>
+</html>

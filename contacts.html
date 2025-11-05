@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - JIKER Loans</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,700;8..144,900&amp;family=Rubik:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+<!-- Include navbar JavaScript -->
+<script src="components/navbar.js" defer></script>
+
+<style type="text/tailwindcss">
+        @layer base {
+          :root {
+            --m3-color-primary: #6B4EA8;
+            --m3-color-on-primary: #FFFFFF;
+            --m3-color-primary-container: #EADDFF;
+            --m3-color-on-primary-container: #250165;
+            --m3-color-secondary: #625B71;
+            --m3-color-on-secondary: #FFFFFF;
+            --m3-color-secondary-container: #E8DEF8;
+            --m3-color-on-secondary-container: #1E192B;
+            --m3-color-tertiary: #7D5260;
+            --m3-color-on-tertiary: #FFFFFF;
+            --m3-color-tertiary-container: #FFD8E4;
+            --m3-color-on-tertiary-container: #31111D;
+            --m3-color-surface: #FFFBFE;
+            --m3-color-on-surface: #1C1B1F;
+            --m3-color-surface-variant: #E7E0EC;
+            --m3-color-on-surface-variant: #49454F;
+            --m3-color-outline: #79747E;
+            --m3-color-background: #FFFBFE;
+            --m3-color-on-background: #1C1B1F;
+          }
+          .dark {
+             --m3-color-primary: #D0BCFF;
+            --m3-color-on-primary: #3A1D75;
+            --m3-color-primary-container: #52368D;
+            --m3-color-on-primary-container: #EADDFF;
+            --m3-color-secondary: #CCC2DC;
+            --m3-color-on-secondary: #332D41;
+            --m3-color-secondary-container: #4A4458;
+            --m3-color-on-secondary-container: #E8DEF8;
+            --m3-color-tertiary: #EFB8C8;
+            --m3-color-on-tertiary: #492532;
+            --m3-color-tertiary-container: #633B48;
+            --m3-color-on-tertiary-container: #FFD8E4;
+            --m3-color-surface: #1C1B1F;
+            --m3-color-on-surface: #E6E1E5;
+            --m3-color-surface-variant: #49454F;
+            --m3-color-on-surface-variant: #CAC4D0;
+            --m3-color-outline: #938F99;
+            --m3-color-background: #1C1B1F;
+            --m3-color-on-background: #E6E1E5;
+          }
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--m3-color-primary)',
+                        'on-primary': 'var(--m3-color-on-primary)',
+                        'primary-container': 'var(--m3-color-primary-container)',
+                        'on-primary-container': 'var(--m3-color-on-primary-container)',
+                        secondary: 'var(--m3-color-secondary)',
+                        'on-secondary': 'var(--m3-color-on-secondary)',
+                        'secondary-container': 'var(--m3-color-secondary-container)',
+                        'on-secondary-container': 'var(--m3-color-on-secondary-container)',
+                        tertiary: 'var(--m3-color-tertiary)',
+                        'on-tertiary': 'var(--m3-color-on-tertiary)',
+                        'tertiary-container': 'var(--m3-color-tertiary-container)',
+                        'on-tertiary-container': 'var(--m3-color-on-tertiary-container)',
+                        surface: 'var(--m3-color-surface)',
+                        'on-surface': 'var(--m3-color-on-surface)',
+                        'surface-variant': 'var(--m3-color-surface-variant)',
+                        'on-surface-variant': 'var(--m3-color-on-surface-variant)',
+                        outline: 'var(--m3-color-outline)',
+                        background: 'var(--m3-color-background)',
+                        'on-background': 'var(--m3-color-on-background)',
+                    },
+                    fontFamily: {
+                        display: ["Rubik", "sans-serif"],
+                        body: ["Roboto Flex", "sans-serif"],
+                    },
+                    borderRadius: {
+                        'DEFAULT': '0.5rem',
+                        'lg': '1rem',
+                        'xl': '1.5rem',
+                        '2xl': '2rem',
+                        'full': '9999px'
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-background">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+  
+  <!-- Navbar Container -->
+  <div id="navbar-container">
+    <!-- navbar.html content will be loaded here -->
+  </div>
+
+<main class="flex-1 px-4 md:px-10 lg:px-20 py-5">
+<div class="mx-auto flex max-w-7xl flex-col gap-16 md:gap-24">
+<section class="relative text-center pt-12 md:pt-20">
+<div class="absolute -top-20 -left-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10 opacity-50"></div>
+<div class="absolute -bottom-20 -right-40 w-96 h-96 bg-tertiary/10 rounded-full blur-3xl -z-10 opacity-50"></div>
+<h1 class="text-on-background text-5xl font-display font-bold leading-tight tracking-tighter md:text-7xl">Get in Touch</h1>
+<p class="text-on-surface-variant text-lg font-normal leading-relaxed max-w-2xl mx-auto mt-6">Have questions? Need help with your application? We're here to assist. Reach out and we'll get back to you as soon as possible.</p>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+<div class="flex flex-col gap-8">
+<div class="flex flex-col items-start gap-4 rounded-2xl bg-surface-variant/30 p-8">
+<div class="flex size-16 items-center justify-center rounded-full bg-primary-container text-on-primary-container"><span class="material-symbols-outlined text-4xl">mark_email_read</span></div>
+<h3 class="text-xl font-bold text-on-surface">Send us a Message</h3>
+<p class="text-on-surface-variant">Fill out the form and our team will get back to you within 24 hours.</p>
+</div>
+<div class="flex flex-col items-start gap-4 rounded-2xl bg-surface-variant/30 p-8">
+<div class="flex size-16 items-center justify-center rounded-full bg-secondary-container text-on-secondary-container"><span class="material-symbols-outlined text-4xl">headset_mic</span></div>
+<h3 class="text-xl font-bold text-on-surface">Chat with Support</h3>
+<p class="text-on-surface-variant">Need a quick answer? Our live chat is available from 9 AM to 5 PM, Monday to Friday.</p>
+</div>
+<div class="flex flex-col items-start gap-4 rounded-2xl bg-surface-variant/30 p-8">
+<div class="flex size-16 items-center justify-center rounded-full bg-tertiary-container text-on-tertiary-container"><span class="material-symbols-outlined text-4xl">help_center</span></div>
+<h3 class="text-xl font-bold text-on-surface">Visit our FAQ</h3>
+<p class="text-on-surface-variant">Browse our frequently asked questions to find instant answers.</p>
+</div>
+</div>
+<div class="relative bg-surface p-8 md:p-12 rounded-2xl shadow-lg shadow-secondary/10">
+<div class="absolute -top-8 -right-8 w-32 h-32 bg-primary-container/50 rounded-full -z-10 blur-xl"></div>
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-tertiary-container/50 rounded-full -z-10 blur-xl"></div>
+<form action="#" class="grid grid-cols-1 gap-6" method="POST">
+<div>
+<label class="text-sm font-medium text-on-surface-variant" for="full-name">Full Name</label>
+<input class="mt-1 block w-full rounded-lg border-outline/50 bg-surface-variant/20 py-3 px-4 text-on-surface focus:border-primary focus:ring-primary" id="full-name" name="full-name" placeholder="Your Name" type="text"/>
+</div>
+<div>
+<label class="text-sm font-medium text-on-surface-variant" for="email">Email Address</label>
+<input class="mt-1 block w-full rounded-lg border-outline/50 bg-surface-variant/20 py-3 px-4 text-on-surface focus:border-primary focus:ring-primary" id="email" name="email" placeholder="you@example.com" type="email"/>
+</div>
+<div>
+<label class="text-sm font-medium text-on-surface-variant" for="subject">Subject</label>
+<input class="mt-1 block w-full rounded-lg border-outline/50 bg-surface-variant/20 py-3 px-4 text-on-surface focus:border-primary focus:ring-primary" id="subject" name="subject" placeholder="What can we help you with?" type="text"/>
+</div>
+<div>
+<label class="text-sm font-medium text-on-surface-variant" for="message">Message</label>
+<textarea class="mt-1 block w-full rounded-lg border-outline/50 bg-surface-variant/20 py-3 px-4 text-on-surface focus:border-primary focus:ring-primary" id="message" name="message" placeholder="Your message..." rows="5"></textarea>
+</div>
+<div>
+<button class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-on-primary text-lg font-bold leading-normal tracking-[0.015em] hover:shadow-lg hover:shadow-primary/30 transition-shadow" type="submit">
+<span class="truncate">Send Message</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+</div>
+</main>
+
+  <!-- Footer Container -->
+  <div id="footer-container">
+    <!-- footer.html content will be loaded here -->
+  </div>
+
+</div>
+</div>
+
+<script>
+  // Load navbar and footer components
+  document.addEventListener('DOMContentLoaded', function() {
+    // Load navbar
+    fetch('components/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading navbar:', error);
+        document.getElementById('navbar-container').innerHTML = '<div class="text-center py-4">Navigation loading failed</div>';
+      });
+    
+    // Load footer
+    fetch('components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading footer:', error);
+        document.getElementById('footer-container').innerHTML = '<div class="text-center py-4">Footer loading failed</div>';
+      });
+  });
+
+  // Form submission handling
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        const formObject = Object.fromEntries(formData.entries());
+        
+        // Simple validation
+        if (!formObject['full-name'] || !formObject.email || !formObject.message) {
+          alert('Please fill in all required fields.');
+          return;
+        }
+        
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formObject.email)) {
+          alert('Please enter a valid email address.');
+          return;
+        }
+        
+        // Simulate form submission
+        console.log('Form submitted:', formObject);
+        alert('Thank you for your message! We will get back to you within 24 hours.');
+        contactForm.reset();
+      });
+    }
+  });
+
+  // Apply Now button functionality
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('button') && e.target.closest('button').textContent.includes('Apply Now')) {
+      window.location.href = 'loans.html';
+    }
+  });
+</script>
+
+</body>
+</html>

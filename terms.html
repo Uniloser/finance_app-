@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Terms of Service - JIKER Loans</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto+Flex:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+    }
+</style>
+<style type="text/tailwindcss">
+    @layer theme {
+        :root, body.light {
+            /* Color Tokens - Light Theme */
+            --md-ref-typeface-brand: 'Manrope';
+            --md-ref-typeface-plain: 'Roboto Flex';
+            
+            --md-sys-color-primary-light: #6A49C2;
+            --md-sys-color-on-primary-light: #FFFFFF;
+            --md-sys-color-primary-container-light: #E9DDFF;
+            --md-sys-color-on-primary-container-light: #22005D;
+            
+            --md-sys-color-secondary-light: #635B70;
+            --md-sys-color-on-secondary-light: #FFFFFF;
+            --md-sys-color-secondary-container-light: #E9DEF8;
+            --md-sys-color-on-secondary-container-light: #1E192B;
+            
+            --md-sys-color-tertiary-light: #7E525D;
+            --md-sys-color-on-tertiary-light: #FFFFFF;
+            --md-sys-color-tertiary-container-light: #FFD9E1;
+            --md-sys-color-on-tertiary-container-light: #31101B;
+            
+            --md-sys-color-surface-light: #FEF7FF;
+            --md-sys-color-on-surface-light: #1D1B20;
+            --md-sys-color-surface-variant-light: #E7E0EB;
+            --md-sys-color-on-surface-variant-light: #49454E;
+            --md-sys-color-surface-container-highest-light: #E6E0E9;
+            --md-sys-color-outline-light: #7A757F;
+            --md-sys-color-background-light: #FEF7FF;
+            --md-sys-color-on-background-light: #1D1B20;
+
+            /* Color Tokens - Dark Theme */
+            --md-sys-color-primary-dark: #CFBCFF;
+            --md-sys-color-on-primary-dark: #3A1290;
+            --md-sys-color-primary-container-dark: #5130A8;
+            --md-sys-color-on-primary-container-dark: #E9DDFF;
+            
+            --md-sys-color-secondary-dark: #CBC3DC;
+            --md-sys-color-on-secondary-dark: #342D41;
+            --md-sys-color-secondary-container-dark: #4B4458;
+            --md-sys-color-on-secondary-container-dark: #E9DEF8;
+            
+            --md-sys-color-tertiary-dark: #F0B8C5;
+            --md-sys-color-on-tertiary-dark: #4A2530;
+            --md-sys-color-tertiary-container-dark: #633B46;
+            --md-sys-color-on-tertiary-container-dark: #FFD9E1;
+            
+            --md-sys-color-surface-dark: #141218;
+            --md-sys-color-on-surface-dark: #E6E1E9;
+            --md-sys-color-surface-variant-dark: #49454E;
+            --md-sys-color-on-surface-variant-dark: #CAC4CF;
+            --md-sys-color-surface-container-highest-dark: #36343B;
+            --md-sys-color-outline-dark: #948F99;
+            --md-sys-color-background-dark: #141218;
+            --md-sys-color-on-background-dark: #E6E1E9;
+
+            /* Apply light theme by default */
+            --primary: var(--md-sys-color-primary-light);
+            --on-primary: var(--md-sys-color-on-primary-light);
+            --primary-container: var(--md-sys-color-primary-container-light);
+            --on-primary-container: var(--md-sys-color-on-primary-container-light);
+            --secondary: var(--md-sys-color-secondary-light);
+            --on-secondary: var(--md-sys-color-on-secondary-light);
+            --secondary-container: var(--md-sys-color-secondary-container-light);
+            --on-secondary-container: var(--md-sys-color-on-secondary-container-light);
+            --tertiary: var(--md-sys-color-tertiary-light);
+            --on-tertiary: var(--md-sys-color-on-tertiary-light);
+            --tertiary-container: var(--md-sys-color-tertiary-container-light);
+            --on-tertiary-container: var(--md-sys-color-on-tertiary-container-light);
+            --surface: var(--md-sys-color-surface-light);
+            --on-surface: var(--md-sys-color-on-surface-light);
+            --surface-variant: var(--md-sys-color-surface-variant-light);
+            --on-surface-variant: var(--md-sys-color-on-surface-variant-light);
+            --outline: var(--md-sys-color-outline-light);
+            --background: var(--md-sys-color-background-light);
+            --on-background: var(--md-sys-color-on-background-light);
+            --surface-container-highest: var(--md-sys-color-surface-container-highest-light);
+        }
+        body.dark {
+            /* Apply dark theme */
+            --primary: var(--md-sys-color-primary-dark);
+            --on-primary: var(--md-sys-color-on-primary-dark);
+            --primary-container: var(--md-sys-color-primary-container-dark);
+            --on-primary-container: var(--md-sys-color-on-primary-container-dark);
+            --secondary: var(--md-sys-color-secondary-dark);
+            --on-secondary: var(--md-sys-color-on-secondary-dark);
+            --secondary-container: var(--md-sys-color-secondary-container-dark);
+            --on-secondary-container: var(--md-sys-color-on-secondary-container-dark);
+            --tertiary: var(--md-sys-color-tertiary-dark);
+            --on-tertiary: var(--md-sys-color-on-tertiary-dark);
+            --tertiary-container: var(--md-sys-color-tertiary-container-dark);
+            --on-tertiary-container: var(--md-sys-color-on-tertiary-container-dark);
+            --surface: var(--md-sys-color-surface-dark);
+            --on-surface: var(--md-sys-color-on-surface-dark);
+            --surface-variant: var(--md-sys-color-surface-variant-dark);
+            --on-surface-variant: var(--md-sys-color-on-surface-variant-dark);
+            --outline: var(--md-sys-color-outline-dark);
+            --background: var(--md-sys-color-background-dark);
+            --on-background: var(--md-sys-color-on-background-dark);
+            --surface-container-highest: var(--md-sys-color-surface-container-highest-dark);
+        }
+    }
+</style>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    primary: "var(--primary)",
+                    "on-primary": "var(--on-primary)",
+                    "primary-container": "var(--primary-container)",
+                    "on-primary-container": "var(--on-primary-container)",
+                    secondary: "var(--secondary)",
+                    "on-secondary": "var(--on-secondary)",
+                    "secondary-container": "var(--secondary-container)",
+                    "on-secondary-container": "var(--on-secondary-container)",
+                    tertiary: "var(--tertiary)",
+                    "on-tertiary": "var(--on-tertiary)",
+                    "tertiary-container": "var(--tertiary-container)",
+                    "on-tertiary-container": "var(--on-tertiary-container)",
+                    surface: "var(--surface)",
+                    "on-surface": "var(--on-surface)",
+                    "surface-variant": "var(--surface-variant)",
+                    "on-surface-variant": "var(--on-surface-variant)",
+                    outline: "var(--outline)",
+                    background: "var(--background)",
+                    "on-background": "var(--on-background)",
+                    "surface-container-highest": "var(--surface-container-highest)",
+                },
+                fontFamily: {
+                    display: ["Manrope", "sans-serif"],
+                    body: ["Roboto Flex", "sans-serif"],
+                },
+                borderRadius: {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+                },
+            },
+        },
+    }
+</script>
+</head>
+<body class="bg-background font-body text-on-surface">
+<div class="relative flex min-h-screen w-full flex-col">
+    
+    <!-- Navbar Container -->
+    <div id="navbar-container">
+        <!-- navbar.html content will be loaded here -->
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="container mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+            <!-- Page Heading -->
+            <div class="mb-12 text-center">
+                <h1 class="font-display text-4xl font-black tracking-tighter text-on-background sm:text-5xl lg:text-6xl">Terms of Service</h1>
+                <p class="mt-4 text-base text-on-surface-variant sm:text-lg">Last Updated: October 26, 2023. This is a binding legal agreement for using JIKER Loans.</p>
+            </div>
+            <div class="space-y-10">
+                <!-- Section: Introduction -->
+                <div>
+                    <h2 class="font-display text-2xl font-bold tracking-tight text-on-surface">1. Introduction</h2>
+                    <p class="mt-4 text-base leading-relaxed text-on-surface-variant">Welcome to JIKER Loans! We specialize in providing fast, easy, and flexible pocket loans for university and college students. This document outlines the terms and conditions governing your use of our services. By accessing or using our platform, you agree to be bound by these terms. Our mission is to help you become better off by providing progressive and superior financial solutions.</p>
+                </div>
+                <!-- Section: Eligibility -->
+                <div>
+                    <h2 class="font-display text-2xl font-bold tracking-tight text-on-surface">2. Eligibility</h2>
+                    <p class="mt-4 text-base leading-relaxed text-on-surface-variant">To be eligible to use JIKER Loans, you must meet the following requirements:</p>
+                    <ul class="mt-4 list-disc space-y-2 pl-6 text-base text-on-surface-variant">
+                        <li>Be at least 18 years of age.</li>
+                        <li>Be currently enrolled as a student at an accredited university or college.</li>
+                        <li>Provide valid identification and proof of enrollment.</li>
+                        <li>Have a valid bank account in your name.</li>
+                    </ul>
+                </div>
+                <!-- Section: Accordion for Loan Terms -->
+                <div>
+                    <h2 class="font-display text-2xl font-bold tracking-tight text-on-surface">3. Loan Terms &amp; Conditions</h2>
+                    <div class="mt-4 space-y-3">
+                        <details class="group rounded-xl bg-surface-container-lowest p-6">
+                            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+                                <span class="text-on-surface">Interest Rates</span>
+                                <span class="transition-transform group-open:rotate-180">
+                                    <span class="material-symbols-outlined text-on-surface-variant">expand_more</span>
+                                </span>
+                            </summary>
+                            <div class="mt-4 text-base leading-relaxed text-on-surface-variant">
+                                All loans are subject to interest, which will be calculated based on the principal amount and the loan term. The applicable interest rate will be clearly disclosed to you before you accept the loan agreement. Rates are fixed for the duration of the loan.
+                            </div>
+                        </details>
+                        <details class="group rounded-xl bg-surface-container-lowest p-6">
+                            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+                                <span class="text-on-surface">Repayment Schedules</span>
+                                <span class="transition-transform group-open:rotate-180">
+                                    <span class="material-symbols-outlined text-on-surface-variant">expand_more</span>
+                                </span>
+                            </summary>
+                            <div class="mt-4 text-base leading-relaxed text-on-surface-variant">
+                                Your repayment schedule will be outlined in your loan agreement, including the due date and amount of each payment. Payments will be automatically debited from your designated bank account. You can also make manual payments through our platform at any time.
+                            </div>
+                        </details>
+                        <details class="group rounded-xl bg-surface-container-lowest p-6">
+                            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+                                <span class="text-on-surface">Late Fees &amp; Default</span>
+                                <span class="transition-transform group-open:rotate-180">
+                                    <span class="material-symbols-outlined text-on-surface-variant">expand_more</span>
+                                </span>
+                            </summary>
+                            <div class="mt-4 text-base leading-relaxed text-on-surface-variant">
+                                If a payment is not made by its due date, a late fee may be applied as specified in your loan agreement. Failure to make payments may result in your account being considered in default, which can impact your credit and may lead to collections activity.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <!-- Section: User Conduct -->
+                <div>
+                    <h2 class="font-display text-2xl font-bold tracking-tight text-on-surface">4. User Responsibilities &amp; Conduct</h2>
+                    <p class="mt-4 text-base leading-relaxed text-on-surface-variant">You agree to provide accurate and complete information when creating your account and applying for a loan. You are responsible for maintaining the confidentiality of your account credentials. You agree not to use our services for any fraudulent or unlawful purpose. Misuse of the service may result in immediate termination of your account.</p>
+                </div>
+                <!-- Section: Termination -->
+                <div>
+                    <h2 class="font-display text-2xl font-bold tracking-tight text-on-surface">5. Termination</h2>
+                    <p class="mt-4 text-base leading-relaxed text-on-surface-variant">JIKER Loans reserves the right to suspend or terminate your access to our services at any time, without notice, for conduct that we believe violates these Terms of Service or is harmful to other users, us, or third parties, or for any other reason. You may close your account at any time, provided all outstanding loan balances are paid in full.</p>
+                </div>
+                <!-- Section: Contact -->
+                <div>
+                    <h2 class="font-display text-2xl font-bold tracking-tight text-on-surface">6. Contact Information</h2>
+                    <p class="mt-4 text-base leading-relaxed text-on-surface-variant">If you have any questions about these Terms of Service, please contact us at <a class="font-medium text-primary hover:underline" href="mailto:support@jikerloans.com">support@jikerloans.com</a>. We are here to help clarify any part of this agreement.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest">
+        <div class="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+                <div class="flex items-center gap-3">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-on-primary">
+                        <span class="material-symbols-outlined">school</span>
+                    </div>
+                    <span class="font-display text-base font-semibold text-on-surface">JIKER Loans</span>
+                </div>
+                <p class="text-sm text-on-surface-variant">© 2025 JIKER Loans LLC. All Rights Reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Floating Action Button -->
+    <a class="fixed bottom-6 right-6 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-on-primary shadow-lg transition-transform hover:scale-110" href="#">
+        <span class="material-symbols-outlined !text-3xl">arrow_upward</span>
+    </a>
+</div>
+
+<script>
+    // Load navbar component
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load navbar
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+                // Initialize navbar functionality after loading
+                initializeNavbar();
+            })
+            .catch(error => {
+                console.error('Error loading navbar:', error);
+                document.getElementById('navbar-container').innerHTML = '<div class="text-center py-4">Navigation loading failed</div>';
+            });
+
+        // Initialize navbar functionality
+        function initializeNavbar() {
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const closeMobileMenu = document.getElementById('closeMobileMenu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            if (mobileMenuButton && mobileMenu && closeMobileMenu) {
+                // Open mobile menu
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.remove('-translate-x-full');
+                    document.body.style.overflow = 'hidden';
+                });
+                
+                // Close mobile menu
+                closeMobileMenu.addEventListener('click', function() {
+                    mobileMenu.classList.add('-translate-x-full');
+                    document.body.style.overflow = '';
+                });
+                
+                // Close menu when clicking on links
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.add('-translate-x-full');
+                        document.body.style.overflow = '';
+                    });
+                });
+                
+                // Close menu when clicking outside
+                mobileMenu.addEventListener('click', function(e) {
+                    if (e.target === mobileMenu) {
+                        mobileMenu.classList.add('-translate-x-full');
+                        document.body.style.overflow = '';
+                    }
+                });
+                
+                // Close menu with Escape key
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && !mobileMenu.classList.contains('-translate-x-full')) {
+                        mobileMenu.classList.add('-translate-x-full');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+            
+            // Highlight current page in navigation
+            function highlightCurrentPage() {
+                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                const navLinks = document.querySelectorAll('nav a, .nav-links a');
+                
+                navLinks.forEach(link => {
+                    const linkHref = link.getAttribute('href');
+                    if (linkHref === currentPage) {
+                        link.classList.add('text-primary', 'font-bold');
+                        link.classList.remove('text-on-surface', 'font-medium');
+                    }
+                });
+            }
+            
+            highlightCurrentPage();
+        }
+
+        // Back to top functionality
+        const backToTopButton = document.querySelector('a[href="#"]');
+        if (backToTopButton) {
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    });
+</script>
+</body>
+</html>
